@@ -114,6 +114,12 @@ body {
    background-image: url(img/00-fondo.avif);
 
 }
+
+article {
+   margin: 10px;
+   padding: 15px;
+   border: 2px rgb(201, 157, 157) inset;
+}
       
 
 
@@ -144,24 +150,14 @@ body {
  }
 
 
+
   .contenedor-bloques {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
- }
+   display: flex;
+   background-color: rgb(66, 47, 47);
 
-
- .especificaciones {
-   width: 50%;
-   display: inline-flex;
  }
 
 
 
-.section {
-   margin: 10px;
-   width: 400px;
-   border: 2px white inset;
-   border-radius: 10px;
-   background-color: rgba(67, 88, 97, 0.751);
-}
+
+
