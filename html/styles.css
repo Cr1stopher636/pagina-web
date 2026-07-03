@@ -18,6 +18,12 @@
     margin: 15px;
  }
 
+ h2 {
+    text-align: center;
+    color: white;
+    margin: 15px;
+ }
+
  h3 {
     text-align: center;
     color: white;
@@ -37,7 +43,7 @@
     padding: 10px;
  }
 
- nav a {
+a {
     background-color: grey;
     color: white;
     text-decoration: none;
@@ -79,6 +85,9 @@
     color: white; 
  }
 
+table, th, td {
+      border: 1px solid white;
+}
 
 
  td {
