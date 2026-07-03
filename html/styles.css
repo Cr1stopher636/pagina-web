@@ -144,18 +144,22 @@ article {
  }
 
 
- .contenedor-modelo, img {
+ .contenedor-modelo {
     display: flex;
-    width: 300px;
+    width: 100%;
  }
 
 
 
   .contenedor-bloques {
    display: flex;
+   flex-wrap: wrap;
    background-color: rgb(66, 47, 47);
 
  }
+
+
+
 
 
 
