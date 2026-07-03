@@ -94,6 +94,11 @@ table, th, td {
     padding: 10px;
  }
 
+input {
+   border-radius: 5px;
+
+ }
+
 
 
 footer {
