@@ -149,6 +149,15 @@ article {
     width: 100%;
  }
 
+ .contenedor-especificaciones {
+    display: flex;
+    width: 100%;
+ }
+
+ .especifications {
+   background-color: gray;
+ }
+
 
 
   .contenedor-bloques {
