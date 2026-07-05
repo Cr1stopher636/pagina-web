@@ -131,12 +131,7 @@ body {
    min-width: max-content; /*Fuerza al fondo a expandirse hasta el final del contenido más ancho */
 }
 
-article {
-   margin: 10px;
-   padding: 15px;
-   border: 2px rgb(201, 157, 157) inset;
-   background-color: rgb(128, 74, 74);
-}
+
 
 
 
@@ -171,19 +166,23 @@ button {
     width: 100%;
  }
 
- .contenedor-especificaciones, section {
+ .contenedor-especificaciones {
    display: flex;
-   flex-wrap: nowrap;
+   flex-direction: row-reverse;
+ }
+
+ .specifications {
+   margin: 10px;
+   padding: 15px;
+   border: 2px rgb(201, 157, 157) inset;
+   background-color: rgb(128, 74, 74);
+}
+
+.models {
+   display: grid;
    justify-content: center;
- }
-
-
- .especifications {
-   display: flex;
- }
-
-
-
+   background-color: gray;
+}
 
 
 
@@ -197,8 +196,9 @@ button {
 
  .contenedor-bloques-index, div {
    display: flex;
+   flex-direction: row-reverse;
    flex-basis: 200px;
-   flex-wrap: nowrap;
+
  }
 
   .contenedor-formulario {
