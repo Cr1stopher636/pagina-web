@@ -24,15 +24,18 @@
  
 <!-- Cuerpo de la pagina -->
 <body>
+    <article>
+        <header>
+             <h1>Luxury Cars</h1>
+        </header>
+    </article>
    
-    <h1>Luxury Cars</h1>
     <!-- span sirve para identificar otras etiquetas dentro de html -->
 
     <!-- PRIMER CONTENEDOR FLEXBOX -->
-     <div class="contenedor-bloques">
-
-
-        <article>
+     <div class="contenedor-bloques-index">
+        <div>
+            <article>
             <h2>Range Rover SV</h2>
             <img src="img/02-rover.jpeg" alt="Range rover SV">
             <p>Un vehículo de tamaño completo y alto rendimiento</p>
@@ -45,28 +48,28 @@
         <article>
             <h2>Pagani Utopia Roadster</h2>
             <img src="img/07-utopia.avif" alt="Pagani utopia Roadster">
-            <p>Un vehículo hecho a medida</p>
-            <p>Equipado con un motor <span class="texto-resaltado">V12 6.0L Biturbo (Twin turbo)</span></p>
-            <p>Desarrollado exclusivamente por <span class="texto-resaltado">Mercedes AMG</span></p>
-        </article>
+                <p>Un vehículo hecho a medida</p>
+                <p>Equipado con un motor <span class="texto-resaltado">V12 6.0L Biturbo (Twin turbo)</span></p>
+                <p>Desarrollado exclusivamente por <span class="texto-resaltado">Mercedes AMG</span></p>
+            </article>
 
 
         <article>
             <h2>Ferrari F 430</h2>
             <img src="img/06-ferrari.jpg" alt="Ferrari F 430">
-            <p>Un vehículo de pista adaptado a las calles</p>
-            <p>Equipado con un motor <span class="texto-resaltado">V8 de 4.3L</span></p>
-            <p>Motor insignia de la marca <span class="texto-resaltado">Italiana</span></p>
-        </article>
+                <p>Un vehículo de pista adaptado a las calles</p>
+                <p>Equipado con un motor <span class="texto-resaltado">V8 de 4.3L</span></p>
+                <p>Motor insignia de la marca <span class="texto-resaltado">Italiana</span></p>
+            </article>
 
 
         <article>
             <h2>Porsche 911</h2>
             <img src="img/03-911.png" alt="Porsche 911">
-            <p>Un vehículo deportivo que tiene una configuración 2 + 2</p>
-            <p>Equipado con un motor <span class="texto-resaltado">Bóxer de 6 cilindros</span></p>
-            <p>Motor insignia de la marca <span class="texto-resaltado">Alemana</span></p>
-        </article>
+                <p>Un vehículo deportivo que tiene una configuración 2 + 2</p>
+                <p>Equipado con un motor <span class="texto-resaltado">Bóxer de 6 cilindros</span></p>
+                <p>Motor insignia de la marca <span class="texto-resaltado">Alemana</span></p>
+            </article>
 
         <article>
             <h2>Mustan Dark Horse</h2>
@@ -74,7 +77,7 @@
             <p>Mustang Americano</p>
             <p>Equipado con un motor <span class="texto-resaltado">V8 5.0 L Coyote </span></p>
             <p>Motor insignia de la marca <span class="texto-resaltado">Americana</span></p>
-        </article>
+            </article>
 
         <article>
             <h2> Cadillac Escalade V</h2>
@@ -82,43 +85,42 @@
             <p>Una camioneta de tamaño completo</p>
             <p>Equipada con un motor V8 <span class="texto-resaltado">de 6.2 L</span></p>
             <p>Motor insignia de la marca <span class="texto-resaltado">Americana</span></p>
-        </article>
-
-        
+            </article>
+        </div>
      </div>
 
 
      <section class="contenedor-especificaciones">
         <article class="especifications">
-                <h3>Especificaciones del Range Rover</h3>
+            <header>
+                <h3>Servicios</h3>
+            </header>
             <p>
                 Motor V8, sus innovadores asientos con 
                 sistema de vibración para la música y la 
                 opción de acabados de carbono.
+
+                <ol type="a">
+                    <li>direcciones</li>
+                    <li>faros</li>
+                    <li>quemacocos</li>
+                    <li>suspensiones</li>
+                </ol>
             </p>
      </article>
 
-     <article class="especifications">
-                <h3>Especificaciones del Pagani Utopia</h3>
-            <p>
-                V12 6.0 L
-                peso pluma idéntico al 
-                de la versión coupé—tan solo 1,280 kg.
-            </p>
-     </article>
 
-
-     <article class="especifications">
-      
+<!-- 
+     <article>
+        <header>
             <h3>Especificaciones del Ferrari F-430</h3>
-        <p>
-            V8 atmosférico de 4.3 
-            litros que entrega 490 CV.
-        </p>
-       
+        </header>
+            <p>
+                V8 atmosférico de 4.3 
+                litros que entrega 490 CV.
+            </p>
         </article>
-
-     </section>
+     </section> -->
 
      
 
@@ -178,7 +180,6 @@
         </ol>
      </section> -->
 
-    <a href="mailto: ricardo0640@outlook.com">
-        <footer>Contactame aquí </footer></a>
+   
 </body>
 </html>
