@@ -172,14 +172,12 @@ button {
  }
 
  .contenedor-especificaciones {
-    display: flex;
-    flex-wrap: nowrap;
+   display: flex;
  }
 
  .especifications {
    display: flex;
-   flex-basis: 200px;
-   justify-content: center;
+   flex-basis: 300px;
    background-color: gray;
  }
 
