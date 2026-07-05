@@ -171,15 +171,20 @@ button {
     width: 100%;
  }
 
- .contenedor-especificaciones {
+ .contenedor-especificaciones, section {
    display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
  }
+
 
  .especifications {
    display: flex;
-   flex-basis: 300px;
-   background-color: gray;
  }
+
+
+
+
 
 
   .contenedor-bloques {
