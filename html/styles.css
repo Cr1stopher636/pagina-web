@@ -205,18 +205,20 @@ button {
 .contenedor-parrafo {
    width: 600px;
    margin: 15px;
-
-
-  
 }
 
 
+/* CSS MODELOS */
 
-
-  .contenedor-bloques {
+.contenedor-bloques {
+   margin: 25px;
    display: flex;
-   flex-direction: row;
-   background-color: rgb(66, 47, 47);
+   width: 600px;
+ }
+
+.contenedor-bloques article {
+   border: 2px white inset;
+   margin: 5px;
  }
 
 
