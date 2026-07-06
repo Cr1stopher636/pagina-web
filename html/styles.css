@@ -132,16 +132,10 @@ body {
 }
 
 
-
-
-
 button {
    margin: 15px;
 }
       
-
-
-
 
 
 .texto-resaltado {
@@ -161,28 +155,61 @@ button {
  }
 
 
+
  .contenedor-modelo {
     display: flex;
     width: 100%;
  }
 
- .contenedor-especificaciones {
+
+
+ .contenedor-imagenes {
    display: flex;
    flex-direction: row-reverse;
  }
 
+
+ .contenedor-especificaciones {
+   margin: 5px;
+   display: flex;
+   flex-direction: row;
+ }
+
+
+
  .specifications {
-   margin: 10px;
+   margin: 25px;
    padding: 15px;
    border: 2px rgb(201, 157, 157) inset;
    background-color: rgb(128, 74, 74);
 }
 
+
+
 .models {
    display: grid;
    justify-content: center;
    background-color: gray;
+   border: 2px white inset;
 }
+
+.imagenes {
+   border: 2px white inset;
+   margin: 25px;
+
+}
+
+
+
+
+.contenedor-parrafo {
+   width: 600px;
+   margin: 15px;
+
+
+  
+}
+
 
 
 
@@ -194,12 +221,19 @@ button {
 
 
 
- .contenedor-bloques-index, div {
+ .contenedor-bloques-index {
+   margin: 25px;
    display: flex;
-   flex-direction: row-reverse;
-   flex-basis: 200px;
+   flex-direction: row;
+   flex-basis: 300px;
+ }
+
+ .contenedores-index {
+   display: flex;
+   width: 200px;
 
  }
+
 
   .contenedor-formulario {
    display: flex;
