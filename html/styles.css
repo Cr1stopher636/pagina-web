@@ -53,10 +53,10 @@ a {
 
 
  form {
+   background-color: rgb(66, 47, 47);
    text-align: center;
    margin: 20px;
    border-radius: 10px;
-   background-image: url(/html/img/fondo2.avif);
    opacity: 0.9;
    border: 2px white inset;
  }
@@ -163,20 +163,25 @@ button {
 
 
 
- .contenedor-imagenes {
+ .contenedor-especificaciones {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+ }
+
+.contenedor-imagenes-especificaciones {
+   margin: 25px;
+   border: 2px white inset;
+   background-color: rgb(109, 67, 67);
+ }
+
+
+/* Contenedor PADRE */
+ .segundo-contenedor-imagenes {
    display: flex;
    flex-direction: row-reverse;
  }
-
-
- .contenedor-especificaciones {
-   margin: 5px;
-   display: flex;
-   flex-direction: row;
- }
-
-
-
+ 
+/* Contenedor HIJO */
  .specifications {
    margin: 25px;
    padding: 15px;
@@ -188,10 +193,13 @@ button {
 
 .models {
    display: grid;
+   grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas del mismo tamaño */
    justify-content: center;
-   background-color: gray;
+   background-color: rgb(165, 132, 132);
    border: 2px white inset;
 }
+
+
 
 .imagenes {
    border: 2px white inset;
@@ -208,7 +216,7 @@ button {
 }
 
 
-/* CSS MODELOS */
+/* Pagina MODELOS */
 
 .contenedor-bloques {
    margin: 25px;
@@ -222,26 +230,25 @@ button {
  }
 
 
-
+/* CONTENEDOR PADRE  */
  .contenedor-bloques-index {
-   margin: 25px;
    display: flex;
-   flex-direction: row;
-   flex-basis: 300px;
+   flex-direction: column;
+   justify-content: center;
  }
 
+
+ /* CONTENEDOR HIJO */
  .contenedores-index {
-   display: flex;
-   width: 200px;
-
+   margin: 35px;
  }
 
 
+ /* Pagina CONTACTO */
   .contenedor-formulario {
    display: flex;
    justify-content: center;
-   flex-direction: row;
-   background-color: rgb(66, 47, 47);
+   display: flex;
  }
 
 
