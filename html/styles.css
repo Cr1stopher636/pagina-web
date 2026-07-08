@@ -167,7 +167,7 @@ button {
  }
 
  .contenedor-especificaciones {
-   display: flex
+   display: flex;
  }
 
  .specifications {
@@ -204,10 +204,10 @@ button {
 
 
 /* CONTENEDOR HIJO */
- .contenedores-index {
+ /* .contenedores-index {
       flex-basis: 400px;
       margin: 10PX;
- }
+ } */
 
 /* CONTENEDO 2HIJO */
  .models {
