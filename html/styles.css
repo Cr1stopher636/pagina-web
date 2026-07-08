@@ -53,7 +53,7 @@ a {
 
 
  form {
-   background-color: rgb(66, 47, 47);
+   background-color: rgb(134, 121, 121);
    text-align: center;
    margin: 20px;
    border-radius: 10px;
@@ -72,22 +72,24 @@ a {
 
  label, textarea {
    text-align: center;
+   font-size: 10px;
  }
+
+
+input {
+    border: 2px white inset;
+    background-color: rgb(160, 146, 123);
+    margin: 20px;
+}
 
 
 textarea {
    display: flex;
    justify-content: center;
    margin: 15px;
-   }
+   background-color: rgb(213, 201, 183);
+}
 
-
-
- input {
-    border: 2px white inset;
-    background-color: beige;
-    margin: 20px;
- }
 
  ol {
     text-align: center;
@@ -178,25 +180,16 @@ button {
 /* Contenedor PADRE */
  .segundo-contenedor-imagenes {
    display: flex;
-   flex-direction: row-reverse;
+   flex-direction: row;
  }
  
-/* Contenedor HIJO */
+/* Contenedor PADRE */
  .specifications {
+   display: flex;
    margin: 25px;
-   padding: 15px;
+   padding: 55px;
    border: 2px rgb(201, 157, 157) inset;
-   background-color: rgb(128, 74, 74);
-}
-
-
-
-.models {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas del mismo tamaño */
-   justify-content: center;
-   background-color: rgb(165, 132, 132);
-   border: 2px white inset;
+   background-color: rgb(52, 31, 31);
 }
 
 
@@ -233,15 +226,25 @@ button {
 /* CONTENEDOR PADRE  */
  .contenedor-bloques-index {
    display: flex;
-   flex-direction: column;
    justify-content: center;
+   flex-wrap: nowrap;
  }
 
 
  /* CONTENEDOR HIJO */
  .contenedores-index {
-   margin: 35px;
+   margin: 25px;
+   width: 100%;
+   max-width: 400px;
+   box-sizing: border-box;
  }
+
+
+ .models {
+   background-color: rgb(109, 67, 55);
+   border: 2px white inset;
+   border-radius: 10px;
+}
 
 
  /* Pagina CONTACTO */
