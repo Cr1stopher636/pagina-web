@@ -167,21 +167,15 @@ button {
  }
 
  .contenedor-especificaciones {
-   display: flex;
-   flex-direction: row-reverse;
+   display: flex
  }
 
  .specifications {
+   width: 100%;
    margin: 10px;
    padding: 15px;
-   border: 2px rgb(201, 157, 157) inset;
+   border: 2px rgb(255, 255, 255) inset;
    background-color: rgb(128, 74, 74);
-}
-
-.models {
-   display: grid;
-   justify-content: center;
-   background-color: gray;
 }
 
 
@@ -194,19 +188,32 @@ button {
 
 
 
- .contenedor-bloques-index, div {
-   display: flex;
-   flex-direction: row-reverse;
-   flex-basis: 200px;
-
- }
-
   .contenedor-formulario {
    display: flex;
    justify-content: center;
    flex-direction: row;
    background-color: rgb(66, 47, 47);
  }
+
+/* CONTENEDOR PADRE */
+  .contenedor-bloques-index, div {
+   display: flex;
+   flex-direction: row-reverse;
+ 
+ }
+
+
+/* CONTENEDOR HIJO */
+ .contenedores-index {
+      flex-basis: 400px;
+      margin: 10PX;
+ }
+
+/* CONTENEDO 2HIJO */
+ .models {
+   border: 2px white inset;
+   background-color: gray;
+}
 
 
 
