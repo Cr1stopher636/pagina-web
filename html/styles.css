@@ -210,7 +210,15 @@ button {
   .contenedor-bloques-index, div {
    display: flex;
    flex-direction: row;
- 
+
+
+   transition: all 0.3s ease;
+ }
+
+ .contenedor-bloques-index:hover {
+   background-color: salmon;
+   transform: translateY(-10px);
+   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
  }
 
 
@@ -227,6 +235,12 @@ button {
    margin: 25px;
 }
 
+.models:hover {
+   background-color: rgb(241, 20, 0);
+   transform: translateY(-55px);
+   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
 
  /* CONTENEDOR PADRE */
  .segundo-contenedor {
@@ -234,6 +248,14 @@ button {
    flex-direction: row;
    align-items: center;
    gap: 16px;
+
+   transition: all 0.3s ease;
+ }
+
+ .segundo-contenedor:hover {
+   background-color: rgb(199, 45, 28);
+   transform: translateY(-10px);
+   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
  }
 
 
