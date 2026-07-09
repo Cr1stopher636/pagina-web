@@ -164,13 +164,6 @@ button {
  }
 
 
- .contenedor-bloques {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
- }
-
-
 
 
 
@@ -201,9 +194,6 @@ button {
 
 
 
-
-
-
   .contenedor-formulario {
    display: flex;
    justify-content: center;
@@ -211,18 +201,31 @@ button {
    background-color: rgb(66, 47, 47);
  }
 
-/* CONTENEDOR PADRE */
-.contenedor-bloques {
 
+ /* CONTENEDOR PADRE */
+.contenedor-bloques {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
  }
 
 
 /* CONTENEDOR HIJO */
 .bloque {
-   background-color: red;
+   width: 300px;
+   background-color: rgba(255, 0, 0, 0.465);
    border: 2px white inset;
-   margin: 10px
+   margin: 10px;
+
+   transition: all 0.3s ease;
  }
+
+ .bloque:hover {
+   background-color: rgb(111, 57, 39);
+   transform: translateY(-35px);
+   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+ }
+
 
 
 /* CONTENEDOR PADRE */
