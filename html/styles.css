@@ -190,20 +190,22 @@ button {
 
 
  .contenedor-especificaciones {
-   display: flex;
+   display:flex;
+
  }
 
  
 
  .specifications {
-   width: 200px;
-   margin: 25px;
-   padding: 15px;
+   margin: 10px;
+   padding: 8px;
    border: 2px rgb(255, 255, 255) inset;
    background-color: rgb(74, 103, 128);
 
    transition: all 0.3s ease;
 }
+
+
 
 .specifications:hover {
    background-color: rgb(114, 157, 199);
@@ -275,7 +277,6 @@ button {
 
    transition: all 0.3s ease;
 
-   
 }
 
 .models:hover {
@@ -291,6 +292,10 @@ button {
    flex-direction: row;
    align-items: center;
    gap: 16px;
+
+   max-width: 1200px; /* El ancho estándar actual suele variar entre 1100px y 1400px */
+   width: 90%;        /* Deja un pequeño margen de seguridad en pantallas móviles */
+   margin: 0 auto;
 
  }
 
