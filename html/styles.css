@@ -41,7 +41,21 @@
    margin: 10px;
    color: white;
    padding: 10px;
+
+   transition: all 0.3s ease;
  }
+
+
+ .nav:hover {
+    background-color: aqua;
+   transform: translateY(-35px);
+ }
+
+
+
+
+
+
 
 a {
     background-color: grey;
@@ -143,10 +157,6 @@ button {
 }
       
 
-.barra-navegador {
-   
-}
-
 
 
 .texto-resaltado {
@@ -182,13 +192,13 @@ button {
    margin: 25px;
    padding: 15px;
    border: 2px rgb(255, 255, 255) inset;
-   background-color: rgb(128, 74, 74);
+   background-color: rgb(74, 103, 128);
 
    transition: all 0.3s ease;
 }
 
 .specifications:hover {
-   background-color: rgb(241, 20, 0);
+   background-color: rgb(114, 157, 199);
    transform: translateY(-35px);
    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
 }
