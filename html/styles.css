@@ -166,13 +166,16 @@ button {
     width: 100%;
  }
 
+
  .contenedor-especificaciones {
    display: flex;
  }
 
+
+
  .specifications {
-   width: 100%;
-   margin: 10px;
+   width: 200px;
+   margin: 25px;
    padding: 15px;
    border: 2px rgb(255, 255, 255) inset;
    background-color: rgb(128, 74, 74);
@@ -184,6 +187,13 @@ button {
    display: flex;
    flex-direction: row;
    background-color: rgb(66, 47, 47);
+ 
+ }
+
+
+ .bloque {
+   border: 2px white inset;
+   margin: 10px
  }
 
 
@@ -195,10 +205,11 @@ button {
    background-color: rgb(66, 47, 47);
  }
 
+
 /* CONTENEDOR PADRE */
   .contenedor-bloques-index, div {
    display: flex;
-   flex-direction: row-reverse;
+   flex-direction: row;
  
  }
 
@@ -213,10 +224,30 @@ button {
  .models {
    border: 2px white inset;
    background-color: gray;
+   margin: 25px;
 }
 
 
+ /* CONTENEDOR PADRE */
+ .segundo-contenedor {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
+ }
 
+
+
+
+/* CONTENEDOR HIJO */
+.segundo-contenedor-imagenes {
+   width: 70%; /* <--- Reducido de 100% a 70% */
+   max-width: 800px; /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
+   margin: 25px auto; /* <--- Centra el contenedor horizontalmente */
+   border: 2px white inset;
+   background-color: gray;
+}
 
 
 
