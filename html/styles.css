@@ -127,7 +127,10 @@ footer {
 
 body {
    width: 100%;
-   background-image: url(img/00-fondo.avif);
+   background-size: cover;
+   background-color: #333333;
+   background-image: url(img/00-fondo.jpg);
+   background-repeat: no-repeat;
    min-width: max-content; /*Fuerza al fondo a expandirse hasta el final del contenido más ancho */
 }
 
@@ -171,6 +174,8 @@ button {
    display: flex;
  }
 
+ 
+
 
 
  .specifications {
@@ -179,6 +184,14 @@ button {
    padding: 15px;
    border: 2px rgb(255, 255, 255) inset;
    background-color: rgb(128, 74, 74);
+
+   transition: all 0.3s ease;
+}
+
+.specifications:hover {
+   background-color: rgb(241, 20, 0);
+   transform: translateY(-35px);
+   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
 }
 
 
@@ -212,14 +225,10 @@ button {
    flex-direction: row;
 
 
-   transition: all 0.3s ease;
+   
  }
 
- .contenedor-bloques-index:hover {
-   background-color: rgb(90, 109, 143);
-   transform: translateY(-10px);
-   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
- }
+
 
 
 /* CONTENEDOR HIJO */
@@ -251,14 +260,9 @@ button {
    align-items: center;
    gap: 16px;
 
-   transition: all 0.3s ease;
+
  }
 
- .segundo-contenedor:hover {
-   background-color: rgb(199, 45, 28);
-   transform: translateY(-10px);
-   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
- }
 
 
 
@@ -268,8 +272,16 @@ button {
    margin: 25px;
    width: 70%; /* <--- Reducido de 100% a 70% */
    max-width: 800px; /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
-   border: 2px white inset;
+   border: 2px rgb(255, 255, 255) inset;
    background-color: gray;
+
+   transition: all 0.3s ease;
+}
+
+.segundo-contenedor-imagenes:hover {
+   background-color: rgb(199, 174, 172);
+   transform: translateY(-35px);
+   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
 }
 
 
