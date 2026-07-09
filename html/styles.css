@@ -4,6 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
  }
 
+
  img {
    display: block;
    width: 200px; 
@@ -149,6 +150,15 @@ body {
 }
 
 
+/* Media query para pantallas más grandes (Tablets o Laptops) */
+@media (min-width: 768px) {
+  body {
+    background-color: lightblue;
+    font-size: 18px;
+  }
+}
+
+
 
 
 
@@ -184,8 +194,6 @@ button {
  }
 
  
-
-
 
  .specifications {
    width: 200px;
@@ -244,6 +252,10 @@ button {
   .contenedor-bloques-index {
    display: flex;
    flex-direction: row;
+
+   max-width: 1200px; /* El ancho estándar actual suele variar entre 1100px y 1400px */
+   width: 90%;        /* Deja un pequeño margen de seguridad en pantallas móviles */
+   margin: 0 auto;
  }
 
 
@@ -262,6 +274,8 @@ button {
    margin: 25px;
 
    transition: all 0.3s ease;
+
+   
 }
 
 .models:hover {
