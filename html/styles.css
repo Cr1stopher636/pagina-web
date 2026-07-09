@@ -231,8 +231,7 @@ button {
  /* CONTENEDOR PADRE */
  .segundo-contenedor {
    display: flex;
-   flex-direction: row-reverse;
-   justify-content: center;
+   flex-direction: row;
    align-items: center;
    gap: 16px;
  }
@@ -242,9 +241,9 @@ button {
 
 /* CONTENEDOR HIJO */
 .segundo-contenedor-imagenes {
+   margin: 25px;
    width: 70%; /* <--- Reducido de 100% a 70% */
    max-width: 800px; /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
-   margin: 25px auto; /* <--- Centra el contenedor horizontalmente */
    border: 2px white inset;
    background-color: gray;
 }
