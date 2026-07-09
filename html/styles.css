@@ -164,10 +164,14 @@ button {
  }
 
 
- .contenedor-modelo {
-    display: flex;
-    width: 100%;
+ .contenedor-bloques {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
  }
+
+
+
 
 
  .contenedor-especificaciones {
@@ -196,18 +200,7 @@ button {
 
 
 
-  .contenedor-bloques {
-   display: flex;
-   flex-direction: row;
-   background-color: rgb(66, 47, 47);
- 
- }
 
-
- .bloque {
-   border: 2px white inset;
-   margin: 10px
- }
 
 
 
@@ -218,14 +211,24 @@ button {
    background-color: rgb(66, 47, 47);
  }
 
+/* CONTENEDOR PADRE */
+.contenedor-bloques {
+
+ }
+
+
+/* CONTENEDOR HIJO */
+.bloque {
+   background-color: red;
+   border: 2px white inset;
+   margin: 10px
+ }
+
 
 /* CONTENEDOR PADRE */
-  .contenedor-bloques-index, div {
+  .contenedor-bloques-index {
    display: flex;
    flex-direction: row;
-
-
-   
  }
 
 
