@@ -47,12 +47,6 @@
  }
 
 
- .nav:hover {
-    background-color: aqua;
-   transform: translateY(-35px);
- }
-
-
 
 
 
@@ -115,14 +109,14 @@ textarea {
     color: white; 
  }
 
-table, th, td {
+/* table, th, td {
       border: 1px solid white;
 }
 
 
  td {
     padding: 10px;
- }
+ } */
 
 input {
    text-align: center;
@@ -209,10 +203,6 @@ button {
 }
 
 
-
-
-
-
   .contenedor-formulario {
    display: flex;
    justify-content: center;
@@ -222,7 +212,7 @@ button {
 
 
  /* CONTENEDOR PADRE */
-.contenedor-bloques {
+   .contenedor-bloques {
    display: flex;
    justify-content: center;
    flex-direction: row;
@@ -230,7 +220,7 @@ button {
 
 
 /* CONTENEDOR HIJO */
-.bloque {
+   .bloque {
    width: 300px;
    background-color: rgba(255, 0, 0, 0.465);
    border: 2px white inset;
@@ -239,7 +229,7 @@ button {
   transition: all 0.3s ease;
  }
 
- .bloque:hover {
+   .bloque:hover {
    background-color: rgb(111, 57, 39);
    transform: translateY(-35px);
    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
@@ -259,7 +249,7 @@ button {
 
 
  /* CONTENEDO 2HIJO - PADRE */
-.models {
+   .models {
    display: flex;
    flex-direction: column;
   
@@ -272,7 +262,7 @@ button {
    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.models:hover {
+   .models:hover {
    background-color: rgba(241, 20, 0, 0.66);
    transform: translateY(-8px);
    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
@@ -291,7 +281,7 @@ button {
 
 
  /* CONTENEDOR PADRE */
- .segundo-contenedor {
+      .segundo-contenedor {
    display: grid;
    flex-direction: row;
    align-items: center;
@@ -306,7 +296,7 @@ button {
 
 
 /* CONTENEDOR HIJO */
-.segundo-contenedor-imagenes {
+   .segundo-contenedor-imagenes {
    margin: 25px;
    width: 70%; /* <--- Reducido de 100% a 70% */
    max-width: 800px; /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
@@ -316,7 +306,7 @@ button {
    transition: all 0.3s ease;
 }
 
-.segundo-contenedor-imagenes:hover {
+   .segundo-contenedor-imagenes:hover {
    background-color: rgba(83, 91, 120, 0.725);
    transform: translateY(-35px);
    box-shadow: 0 10px 20px rgba(101, 26, 26, 0.3);
