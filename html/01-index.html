@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8"> <!-- Para mostrar correctamente los caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,26 +15,27 @@
 </head>
 <header>
     <nav class="barra-navegador">
-    <a target="_blank" href="01-index.html">Inicio</a>
-    <a target="_blank" href="02-modelos.html">Modelos</a>
-    <a target="_blank" href="03-contacto.html">Contacto</a>
-</nav>
-    
+        <a target="_blank" href="01-index.html">Inicio</a>
+        <a target="_blank" href="02-modelos.html">Modelos</a>
+        <a target="_blank" href="03-contacto.html">Contacto</a>
+    </nav>
+
 </header>
 <hr>
- 
+
 <!-- Cuerpo de la pagina -->
+
 <body>
     <article>
         <header>
-             <h1>Luxury Cars</h1>
+            <h1>Luxury Cars</h1>
         </header>
     </article>
-   
+
     <!-- span sirve para identificar otras etiquetas dentro de html -->
 
     <!-- PRIMER CONTENEDOR FLEXBOX -->
-<div class="contenedor-bloques-index">
+    <div class="contenedor-bloques-index">
 
         <article class="models">
             <h2>Range Rover SV</h2>
@@ -74,7 +76,7 @@
         </article>
 
 
-   
+
         <article class="models">
             <h2>Mustang Dark Horse</h2>
             <img src="img/09-mustang.jpeg" alt="Mustang Dark Horse" title="Dark Horse">
@@ -92,67 +94,101 @@
             <p>Equipada con un motor <span class="texto-resaltado">V8 Supercargado de 6.2 L</span></p>
             <p>Motor insignia de la marca <span class="texto-resaltado">Cadillac</span></p>
         </article>
-</div>
-
-
-
-<section class="segundo-contenedor">
-    <article class="segundo-contenedor-imagenes">
-        <a href="/html/02-modelos.html">
-            <p>
-            SUV de lujo de alto rendimiento
-        </p>
-        </a>
-        
-    </article>
-    
-    <article class="segundo-contenedor-imagenes">
-        <a href="/html/02-modelos.html">
-            <p>
-            Coupé de lujo 2+2
-        </p>
-        </a>
-    </article>
+    </div>
 
 
 
 
+    <!-- SEGUNDA TARJETA -->
+    <section class="contenedor-especificaciones">
+        <article class="specifications">
+            <article class="contenido-principal">
+                <h3>Urus</h3>
+                <img src="img/12-urus.jpg" alt="Lamborghini Urus" title="Urus">
+                <p>Contenido de la Urus</p>
+            </article>
 
-</section>
+
+
+            <article class="contenido-principal">
+                <h3>Chiron</h3>
+                <img src="img/13-chiron.jpg" alt="Bugatti Chiron" title="Chiron">
+            </article>
+
+
+            <article class="contenido-principal">
+                <h3>La Ferrari</h3>
+                <img src="img/14-laferrari.jpg" alt="Ferrari La Ferrari" title="La Ferrari">
+            </article>
+
+
+            <article class="contenido-principal">
+                <h3>Bentayga</h3>
+                <img src="img/11-bentayga.jpg" alt="Bentley Bentayga" title="Bentayga">
+            </article>
 
 
 
 
-     <section class="segundo-contenedor">
+            <article class="contenido-principal">
+                <h3>Clase S</h3>
+                <img src="img/15-mercedes.jpeg" alt="mercedes benz clase s" title="Clase s">
+            </article>
+        </article>
+    </section>
+
+        <section class="segundo-contenedor">
+        <article class="segundo-contenedor-imagenes">
+            <a href="/html/02-modelos.html">
+                <p>
+                    SUV de lujo de alto rendimiento
+                </p>
+            </a>
+
+        </article>
+
+        <article class="segundo-contenedor-imagenes">
+            <a href="/html/02-modelos.html">
+                <p>
+                    Coupé de lujo 2+2
+                </p>
+            </a>
+        </article>
+    </section>
+
+
+
+
+    <section class="segundo-contenedor">
         <article class="segundo-contenedor-imagenes">
             <h3>
                 Porsche Cayenne Turbo GT
             </h3>
-                <p>
-                El Porsche Cayenne Turbo GT es la cúspide del desempeño en 
-                la gama de SUV de la marca. Se ofrece exclusivamente en 
-                carrocería Coupé, con un motor V8 biturbo de 4.0 litros 
-                que genera 659 HP y 850 Nm de torque. 
-                Acelera de 0 a 100 km/h en apenas 3.3 segundos y 
+            <p>
+                El Porsche Cayenne Turbo GT es la cúspide del desempeño en
+                la gama de SUV de la marca. Se ofrece exclusivamente en
+                carrocería Coupé, con un motor V8 biturbo de 4.0 litros
+                que genera 659 HP y 850 Nm de torque.
+                Acelera de 0 a 100 km/h en apenas 3.3 segundos y
                 alcanza una velocidad máxima de 300 km/h.
             </p>
-                  <img src="img/18-porsche.jpg" alt="Porsche Cayenne Turbo GT" title="Turbo GT">
-       </article>
+            <img src="img/18-porsche.jpg" alt="Porsche Cayenne Turbo GT" title="Turbo GT">
+        </article>
 
         <article class="segundo-contenedor-imagenes">
             <h3>
                 Ford Bronco Raptor
             </h3>
-            
-                <p>
+
+            <p>
                 El Ford Bronco Raptor es un SUV todoterreno de alto rendimiento
                 diseñado para aventuras extremas. Equipado con un motor V6 biturbo
                 de 3.0 litros que produce 400 HP y 500 Nm de torque,
                 ofrece capacidades off-road excepcionales, incluyendo suspensión reforzada,
                 neumáticos todoterreno y tecnología avanzada de tracción en las cuatro ruedas.
             </p>
-                <img src="img/22-ford.avif" alt="Ford Bronco Raptor" title="Bronco Raptor">
-       </article>
+            <img src="img/22-ford.avif" alt="Ford Bronco Raptor" title="Bronco Raptor">
+        </article>
 
 
         <article class="segundo-contenedor-imagenes">
@@ -160,51 +196,19 @@
                 Maserati Gran Turismo
             </h3>
 
-                <p>
-               coupé de lujo 2+2 equipado con el aclamado motor V6 Nettuno biturbo 
-               (hasta 550 hp) o una variante 100% eléctrica (Folgore). 
-               Ofrece una aceleración de 0 a 100 km/h en 3.5 segundos 
-               y una velocidad máxima de 320 km/h.
+            <p>
+                coupé de lujo 2+2 equipado con el aclamado motor V6 Nettuno biturbo
+                (hasta 550 hp) o una variante 100% eléctrica (Folgore).
+                Ofrece una aceleración de 0 a 100 km/h en 3.5 segundos
+                y una velocidad máxima de 320 km/h.
             </p>
-                <img src="img/16-maserati.jpg" alt="Maserati Gran Turismo" title="Grand Turismo">
-       </article>
-</section> 
-
-
-
-     <!-- SEGUNDA TARJETA -->
-     <section class="contenedor-especificaciones">
-             <article class="specifications">
-                <h3>Urus</h3>
-              <img src="img/12-urus.jpg" alt="Lamborghini Urus" title="Urus">
-            </article>  
-
-
-             <article class="specifications">
-                <h3>Chiron</h3>
-              <img src="img/13-chiron.jpg" alt="Bugatti Chiron" title="Chiron">
-        </article> 
-
-    
-         <article class="specifications">
-                <h3>La Ferrari</h3>
-              <img src="img/14-laferrari.jpg" alt="Ferrari La Ferrari" title="La Ferrari">
+            <img src="img/16-maserati.jpg" alt="Maserati Gran Turismo" title="Grand Turismo">
         </article>
-
-
-         <article class="specifications">
-                <h3>Bentayga</h3>
-              <img src="img/11-bentayga.jpg" alt="Bentley Bentayga" title="Bentayga">
-        </article>
+    </section>
 
 
 
 
-         <article class="specifications">
-                <h3>Clase S</h3>
-              <img src="img/15-mercedes.jpeg" alt="mercedes benz clase s" title="Clase s">
-        </article> 
-</section> 
 
 
 
@@ -219,7 +223,7 @@
 
 
     <!-- TERCER CONTENEDOR FLEXBOX -->
-     <!-- <div class="tercer-contenedor">
+    <!-- <div class="tercer-contenedor">
         <table style="width: 500px;">
         <thead>
             <td>Marca</td>
@@ -251,10 +255,10 @@
         </tfoot>
     </table>
      </div> -->
-       
 
 
-     <!-- <section class="section">
+
+    <!-- <section class="section">
         <br>
         <h3>Mas vehículos</h3>
         <ol>
@@ -269,11 +273,12 @@
         </ol> -->
 
 
-        <footer>
-            <p>copyright 2026</p>
-        </footer>
+    <footer>
+        <p>copyright 2026</p>
+    </footer>
 
 
-   
+
 </body>
+
 </html>
