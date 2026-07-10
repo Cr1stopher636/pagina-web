@@ -68,6 +68,7 @@ a {
    background-image: url(/html/img/fondo2.avif);
    opacity: 0.9;
    border: 2px white inset;
+   background-color: rgba(42, 118, 165, 0.331);
  }
 
 
@@ -207,7 +208,7 @@ button {
    display: flex;
    justify-content: center;
    flex-direction: row;
-   background-color: rgb(66, 47, 47);
+   
  }
 
 
@@ -218,20 +219,27 @@ button {
    flex-direction: row;
  }
 
+ /* CONTENEDOR MODELO-PADRE */
+ .contenedor-modelo {
+   display: flex;
+ }
+
 
 /* CONTENEDOR HIJO */
    .bloque {
+
    width: 300px;
-   background-color: rgba(255, 0, 0, 0.465);
+   background-color: gray;
    border: 2px white inset;
    margin: 10px;
 
   transition: all 0.3s ease;
  }
 
+
    .bloque:hover {
-   background-color: rgb(111, 57, 39);
-   transform: translateY(-35px);
+   background-color: rgba(22, 110, 157, 0.559);
+   transform: translateY(-8px);
    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
  }
 
