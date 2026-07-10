@@ -220,7 +220,7 @@ button {
  }
 
  /* CONTENEDOR MODELO-PADRE */
- .contenedor-modelo {
+   .contenedor-modelo {
    display: flex;
  }
 
@@ -271,7 +271,7 @@ button {
 }
 
    .models:hover {
-   background-color: rgba(241, 20, 0, 0.66);
+   background-color: rgba(22, 110, 157, 0.559);
    transform: translateY(-8px);
    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
 }
