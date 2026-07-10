@@ -281,9 +281,9 @@ button {
 
 
  /* CONTENEDOR PADRE */
-      .segundo-contenedor {
-   display: grid;
-   flex-direction: row;
+   .segundo-contenedor {
+   display: flex;
+   justify-content: center;
    align-items: center;
    gap: 16px;
 
@@ -291,26 +291,50 @@ button {
    width: 90%;        /* Deja un pequeño margen de seguridad en pantallas móviles */
    margin: 0 auto;
 
+
  }
 
 
+ .segundo-contenedor-imagenes {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
 
-/* CONTENEDOR HIJO */
-   .segundo-contenedor-imagenes {
+   max-width: 1200px; /* El ancho estándar actual suele variar entre 1100px y 1400px */
+   width: 90%;        /* Deja un pequeño margen de seguridad en pantallas móviles */
+   margin: 0 auto;
+ }
+
+
+ .segundo-contenedor-imagenes:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+   transition: all 0.3s ease;
+ }
+
+
+ /* CONTENEDOR HIJO */
+   .subcontenedor {
    margin: 25px;
    width: 70%; /* <--- Reducido de 100% a 70% */
    max-width: 800px; /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
    border: 2px rgb(255, 255, 255) inset;
    background-color: gray;
-
-   transition: all 0.3s ease;
+   
+   
 }
 
-   .segundo-contenedor-imagenes:hover {
-   background-color: rgba(83, 91, 120, 0.725);
-   transform: translateY(-35px);
-   box-shadow: 0 10px 20px rgba(101, 26, 26, 0.3);
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
