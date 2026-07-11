@@ -302,6 +302,18 @@ button {
 
  }
 
+ 
+ /* CONTENEDOR HIJO */
+   .subcontenedor {
+   margin: 25px;
+   width: 70%; /* <--- Reducido de 100% a 70% */
+   max-width: 800px; /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
+   border: 2px rgb(255, 255, 255) inset;
+   background-color: rgb(56, 80, 121);
+   
+   
+}
+
 
  .segundo-contenedor-imagenes {
    display: flex;
@@ -317,21 +329,11 @@ button {
 
  .segundo-contenedor-imagenes:hover {
    transform: translateY(-8px);
-   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+   box-shadow: 0 10px 20px rgba(200, 10, 10, 0.794);
    transition: all 0.3s ease;
  }
 
 
- /* CONTENEDOR HIJO */
-   .subcontenedor {
-   margin: 25px;
-   width: 70%; /* <--- Reducido de 100% a 70% */
-   max-width: 800px; /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
-   border: 2px rgb(255, 255, 255) inset;
-   background-color: gray;
-   
-   
-}
 
 
 
