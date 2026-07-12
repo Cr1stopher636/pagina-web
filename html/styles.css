@@ -194,14 +194,27 @@ button {
 /* ESPECIFICACIONES */
  .specifications {
    display: flex;
-   margin: 10px;
+
+
+
    padding: 8px;
    border: 2px rgb(255, 255, 255) solid;
    background-color: rgb(74, 103, 128);
-  
+}
 
+.contenido-principal {
+   margin: 10px;
+   transition: all 0.3s ease;
+   border: 2px white solid;
   
 }
+
+.contenido-principal:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 10px 20px rgba(235, 227, 227, 0.3);
+
+}
+
 
 
   .contenedor-formulario {
@@ -279,13 +292,6 @@ button {
 
 
 
-/* CONTENEDOR HIJO */
- /* .contenedores-index {
-      flex-basis: 400px;
-      margin: 10PX;
- } */
-
-
 
 
  /* CONTENEDOR PADRE */
@@ -305,6 +311,7 @@ button {
  
  /* CONTENEDOR HIJO */
    .subcontenedor {
+   display: flex;
    margin: 25px;
    width: 70%; /* <--- Reducido de 100% a 70% */
    max-width: 800px; /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
@@ -316,20 +323,15 @@ button {
 
 
  .segundo-contenedor-imagenes {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 16px;
+   border: 2px white solid;
 
-   max-width: 1200px; /* El ancho estándar actual suele variar entre 1100px y 1400px */
-   width: 90%;        /* Deja un pequeño margen de seguridad en pantallas móviles */
-   margin: 0 auto;
+
  }
 
 
  .segundo-contenedor-imagenes:hover {
    transform: translateY(-8px);
-   box-shadow: 0 10px 20px rgba(200, 10, 10, 0.794);
+   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
    transition: all 0.3s ease;
  }
 
