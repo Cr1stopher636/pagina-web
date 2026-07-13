@@ -1,4 +1,4 @@
- *  {
+ * {
 
     margin: 0;
     padding: 0;
@@ -87,7 +87,8 @@
  }
 
 
- label, textarea {
+ label,
+ textarea {
     text-align: center;
  }
 
@@ -159,17 +160,17 @@
 
 
 
-button {
+ button {
     width: 100px;
     height: 35px;
     margin: 20px;
 
     background-color: #4caf9ed1;
     color: white;
-border-radius: 10px;
+    border-radius: 10px;
 
     box-sizing: border-box;
-}
+ }
 
 
 
@@ -209,9 +210,18 @@ border-radius: 10px;
     border: 2px rgb(255, 255, 255) solid;
     background-color: rgb(74, 103, 128);
 
+ }
 
+ .contenido-principal:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(235, 227, 227, 0.3);
 
  }
+
+
+
+
+
 
 
  .contenedor-formulario {
@@ -235,6 +245,7 @@ border-radius: 10px;
  }
 
 
+
  /* CONTENEDOR HIJO */
  .bloque {
 
@@ -245,6 +256,7 @@ border-radius: 10px;
 
     transition: all 0.3s ease;
  }
+
 
 
  .bloque:hover {
@@ -268,6 +280,7 @@ border-radius: 10px;
  }
 
 
+
  /* CONTENEDO 2HIJO - PADRE */
  .models {
     display: flex;
@@ -279,8 +292,9 @@ border-radius: 10px;
     margin: 15px auto;
 
     /* Optimización de la transición solo de lo que cambia */
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
  }
+
 
  .models:hover {
     background-color: rgba(22, 110, 157, 0.559);
@@ -289,13 +303,6 @@ border-radius: 10px;
  }
 
 
-
-
- /* CONTENEDOR HIJO */
- /* .contenedores-index {
-      flex-basis: 400px;
-      margin: 10PX;
- } */
 
 
 
@@ -317,17 +324,25 @@ border-radius: 10px;
  }
 
 
- .segundo-contenedor-imagenes {
+ /* CONTENEDOR HIJO */
+ .subcontenedor {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    margin: 25px;
+    width: 70%;
+    /* <--- Reducido de 100% a 70% */
+    max-width: 800px;
+    /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
+    border: 2px rgb(255, 255, 255) inset;
+    background-color: rgb(56, 80, 121);
 
-    max-width: 1200px;
-    /* El ancho estándar actual suele variar entre 1100px y 1400px */
-    width: 90%;
-    /* Deja un pequeño margen de seguridad en pantallas móviles */
-    margin: 0 auto;
+
+ }
+
+
+ .segundo-contenedor-imagenes {
+    border: 2px white solid;
+
+
  }
 
 
@@ -335,18 +350,4 @@ border-radius: 10px;
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
- }
-
-
- /* CONTENEDOR HIJO */
- .subcontenedor {
-    margin: 25px;
-    width: 70%;
-    /* <--- Reducido de 100% a 70% */
-    max-width: 800px;
-    /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
-    border: 2px rgb(255, 255, 255) inset;
-    background-color: gray;
-
-
  }
