@@ -292,11 +292,13 @@
  .models {
     display: flex;
     flex-direction: column;
+    margin: 10px auto;
 
 
     border: 2px white inset;
     background-color: gray;
-    margin: 15px auto;
+
+
 
     /* Optimización de la transición solo de lo que cambia */
     transition: all 0.3s ease;
