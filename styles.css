@@ -72,7 +72,7 @@
     text-align: center;
     margin: 20px;
     border-radius: 10px;
-    background-image: url(/html/img/fondo2.avif);
+    background-image: url(/public/assets/00-fondo.jpg);
     opacity: 0.9;
     border: 2px white inset;
     background-color: rgba(42, 118, 165, 0.331);
@@ -147,7 +147,7 @@
     width: 100%;
     background-size: cover;
     background-color: #333333;
-    background-image: url(img/00-fondo.jpg);
+    background-image: url(/public/assets/00-fondo.jpg);
     background-repeat: no-repeat;
     min-width: max-content;
     /*Fuerza al fondo a expandirse hasta el final del contenido más ancho */
