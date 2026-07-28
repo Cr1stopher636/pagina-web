@@ -216,7 +216,7 @@
  /* ESPECIFICACIONES */
  .subcontenedor-especificaciones {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     margin: 10px auto;
     padding: 8px;
     border: 2px white solid;
