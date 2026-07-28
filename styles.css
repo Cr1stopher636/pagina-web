@@ -18,6 +18,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 2px;
+   
  }
 
  /* .rover-lateral {
@@ -260,26 +261,20 @@
 
  /* CONTENEDOR PADRE */
  .contenedor-bloques {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
 
-   max-width: 1200px;
-   width: 90%;
-   margin: 5px auto;
+    max-width: 1200px;
+    width: 90%;
+    margin: 5px auto;
 
  }
 
- .models, img {
+ .models {
     max-width: 200px;
-    border-radius: 15px;
-    object-fit: cover;
  }
 
- .contenedor-bloques, img {
-    width: 300px;
-    border-radius: 15px;
-    object-fit: cover;
- }
+
 
 
 
@@ -289,7 +284,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    
+
  }
 
 
@@ -298,7 +293,7 @@
  .bloque {
     max-width: 200px;
     background-image: url(/public/assets/12-fondo:bentley.avif);
-   
+
     margin: 10px;
     transition: all 0.3s ease;
  }
@@ -330,6 +325,7 @@
 
  /* CONTENEDO 2HIJO - PADRE */
  .models {
+   max-width: 1300px;
 
     margin: 5px;
 
