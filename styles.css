@@ -262,12 +262,12 @@
  /* CONTENEDOR PADRE */
  .contenedor-bloques {
     display: flex;
+    flex-direction: column;
     align-items: center;
 
-    max-width: 1200px;
+    max-width: 1300px;
     width: 90%;
-    margin: 5px auto;
-
+    margin: 0px auto;
  }
 
  .models {
