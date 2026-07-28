@@ -18,7 +18,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 2px;
-   
+
  }
 
  /* .rover-lateral {
@@ -272,9 +272,9 @@
 
  .models {
     max-width: 200px;
+
+
  }
-
-
 
 
 
@@ -291,11 +291,12 @@
 
  /* CONTENEDOR HIJO */
  .bloque {
-    max-width: 200px;
+    max-width: 300px;
     background-image: url(/public/assets/12-fondo:bentley.avif);
 
     margin: 10px;
     transition: all 0.3s ease;
+    border: 2px white solid;
  }
 
 
@@ -325,7 +326,7 @@
 
  /* CONTENEDO 2HIJO - PADRE */
  .models {
-   max-width: 1300px;
+    max-width: 1300px;
 
     margin: 5px;
 
