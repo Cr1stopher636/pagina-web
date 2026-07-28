@@ -20,6 +20,13 @@
     padding: 2px;
  }
 
+ /* .rover-lateral {
+   width: 400px;
+   height: 200px;
+   display: block;
+ } */
+
+
  h1 {
     text-align: center;
     color: white;
@@ -199,29 +206,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
+
  }
 
 
  /* ESPECIFICACIONES */
  .subcontenedor-especificaciones {
     display: flex;
-    margin: 10px;
+    flex-direction: row-reverse;
+    margin: 10px auto;
     padding: 8px;
-   
+    border: 2px white solid;
+
+    transition: all 0.3s ease;
+ }
+
+ .subcontenedor-especificaciones:hover {
+    background-color: rgba(22, 110, 157, 0.559);
+    transform: translateY(-8px);
+
  }
 
 
  .contenido-principal {
-   border: 2px white solid;
-   background-color: rgb(74, 103, 128);
-   transition: all 0.3s ease;
+    border: 2px white solid;
+    background-color: rgb(74, 103, 128);
+    transition: all 0.3s ease;
  }
 
 
 
  .contenido-principal:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(235, 227, 227, 0.3);
+    box-shadow: 0 10px 20px rgba(255, 208, 208, 0.3);
 
  }
 
@@ -241,26 +260,46 @@
 
  /* CONTENEDOR PADRE */
  .contenedor-bloques {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+   display: flex;
+   align-items: center;
+
+   max-width: 1200px;
+   width: 90%;
+   margin: 5px auto;
+
  }
+
+ .models, img {
+    max-width: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+ }
+
+ .contenedor-bloques, img {
+    width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+ }
+
+
+
 
  /* CONTENEDOR MODELO-PADRE */
  .contenedor-modelo {
     display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
  }
 
 
 
  /* CONTENEDOR HIJO */
  .bloque {
-
-    width: 300px;
-    background-color: gray;
-    border: 2px white inset;
+    max-width: 200px;
+    background-image: url(/public/assets/12-fondo:bentley.avif);
+   
     margin: 10px;
-
     transition: all 0.3s ease;
  }
 
@@ -277,12 +316,13 @@
  /* CONTENEDOR PADRE */
  .contenedor-bloques-index {
     display: flex;
-    flex-direction: row;
+
 
     max-width: 1300px;
     /* El ancho estándar actual suele variar entre 1100px y 1400px */
     width: 90%;
     /* Deja un pequeño margen de seguridad en pantallas móviles */
+
     margin: 0 auto;
  }
 
@@ -290,15 +330,11 @@
 
  /* CONTENEDO 2HIJO - PADRE */
  .models {
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
 
+    margin: 5px;
 
     border: 2px white inset;
-    background-color: gray;
-
-
+    background-color: rgba(149, 136, 136, 0.198);
 
     /* Optimización de la transición solo de lo que cambia */
     transition: all 0.3s ease;
@@ -309,55 +345,4 @@
     background-color: rgba(22, 110, 157, 0.559);
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
- }
-
-
-
-
-
-
- /* CONTENEDOR PADRE */
- .segundo-contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-
-    max-width: 1200px;
-    /* El ancho estándar actual suele variar entre 1100px y 1400px */
-    width: 90%;
-    /* Deja un pequeño margen de seguridad en pantallas móviles */
-    margin: 0 auto;
-
-
- }
-
-
- /* CONTENEDOR HIJO */
- .subcontenedor {
-    display: flex;
-    margin: 25px;
-    width: 70%;
-    /* <--- Reducido de 100% a 70% */
-    max-width: 800px;
-    /* <--- Opcional: Evita que se estire demasiado en pantallas gigantes */
-
- }
-
-
- .segundo-contenedor-imagenes {
-   background-color: gray;
-   border: 2px white solid;
-   transition: all 0.3s ease;
-
-
- }
-
-
- .segundo-contenedor-imagenes:hover {
-       background-color: rgba(22, 110, 157, 0.559);
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-    
-
  }
