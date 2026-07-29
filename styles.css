@@ -154,10 +154,11 @@
  body {
     width: 100%;
     background-size: cover;
-    background-color: #333333;
+   
     background-image: url(./public/assets/00-fondo.jpg);
     background-repeat: no-repeat;
     min-width: max-content;
+    display: block;
     /*Fuerza al fondo a expandirse hasta el final del contenido más ancho */
  }
 
@@ -207,9 +208,13 @@
     width: 300px;
     display: flex;
     flex-direction: row-reverse;
-    position: sticky;
+
+  
+  
+    position: relative;
     top: 10px;
     left: 710px;
+    justify-content: center;
 
 
 
@@ -220,12 +225,22 @@
 
  /* ESPECIFICACIONES */
  .subcontenedor-especificaciones {
-   
+ 
+ 
+
+
     border: 2px white inset;
     margin: 20px;
 
     transition: all 0.3s ease;
  }
+
+ /* .subcontenedor-especificaciones, img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+ } */
 
 
  .subcontenedor-especificaciones:hover {
@@ -235,12 +250,13 @@
  }
 
 
- .galeria {
-    width: 200px;
-
-
-
- }
+.galeria,
+ img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+ }  
 
 
 
