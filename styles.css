@@ -204,31 +204,45 @@
 
  /* CONTENEDOR DE ESPECIFICACIONES */
  .contenedor-especificaciones {
+    width: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+
+
+
+
     align-items: center;
-
-
 
  }
 
 
  /* ESPECIFICACIONES */
  .subcontenedor-especificaciones {
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    padding: 8px;
-    border: 2px white solid;
+    position: relative;
+    top: 30px;
+    left: 510px;
+    border: 2px white inset;
+    margin: 20px;
 
     transition: all 0.3s ease;
  }
+
 
  .subcontenedor-especificaciones:hover {
     background-color: rgba(22, 110, 157, 0.559);
     transform: translateY(-8px);
 
  }
+
+
+ .galeria {
+    width: 200px;
+
+
+
+ }
+
+
 
 
  .contenido-principal {
