@@ -207,7 +207,9 @@
     width: 300px;
     display: flex;
     flex-direction: row-reverse;
-
+    position: sticky;
+    top: 10px;
+    left: 710px;
 
 
 
@@ -218,9 +220,7 @@
 
  /* ESPECIFICACIONES */
  .subcontenedor-especificaciones {
-    position: relative;
-    top: 30px;
-    left: 510px;
+   
     border: 2px white inset;
     margin: 20px;
 
