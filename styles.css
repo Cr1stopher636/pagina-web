@@ -369,13 +369,15 @@
     background-image: url(./public/assets/23-fondo.avif);
     margin: 30px auto;
     border-radius: 15px;
+    border: 2px white solid;
+    padding: 30px;
  }
 
  .container {
     background-color: rgb(104, 119, 137);
     border-radius: 15px;
     border: 2px white solid;
-    margin: 100px auto;
+    margin: 30px auto;
  }
 
  #patrocinadores {
