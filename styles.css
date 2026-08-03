@@ -263,7 +263,6 @@
  .contenido-principal:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(255, 208, 208, 0.3);
-
  }
 
 
@@ -344,10 +343,10 @@
 
  /* CONTENEDO 2HIJO - PADRE */
  .models {
-    max-width: 1300px;
+   max-width: 1300px;
     margin: 5px;
     border: 2px white inset;
-    background-color: rgba(149, 136, 136, 0.198);
+    background-color: rgba(209, 221, 233, 0.198);
 
     /* Optimización de la transición solo de lo que cambia */
     transition: all 0.3s ease;
@@ -362,7 +361,7 @@
 
  .segunda-tarjeta {
     display: block;
-    max-width: 1200px;
+    max-width: 1000px;
     height: 300px;
     align-items: center;
 
@@ -375,8 +374,15 @@
 
  .container {
 
-
     border-radius: 10px;
     margin: 5px;
+ }
 
+ #patrocinadores {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 10px auto;
  }
