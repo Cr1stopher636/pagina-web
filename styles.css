@@ -360,29 +360,29 @@
  }
 
  .segunda-tarjeta {
-    display: block;
+    display: flex;
+    flex-direction: column;
     max-width: 1000px;
-    height: 300px;
+   object-fit: cover;  
     align-items: center;
 
-
-    background-color: rgb(129, 160, 164);
-    border: 2px white solid;
-    margin: 50px auto;
+    background-image: url(./public/assets/23-fondo.jpg);
+    margin: 30px auto;
     border-radius: 15px;
  }
 
  .container {
-
-    border-radius: 10px;
-    margin: 5px;
+   background-color: rgb(104, 119, 137);
+   border-radius: 15px;
+   border: 2px white solid;
+   margin: 100px auto;
  }
 
  #patrocinadores {
-      display: flex;
+     
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 20px;
       margin: 10px auto;
  }
