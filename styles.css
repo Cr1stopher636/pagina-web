@@ -343,7 +343,7 @@
 
  /* CONTENEDO 2HIJO - PADRE */
  .models {
-   max-width: 1300px;
+    max-width: 1300px;
     margin: 5px;
     border: 2px white inset;
     background-color: rgba(209, 221, 233, 0.198);
@@ -363,26 +363,27 @@
     display: flex;
     flex-direction: column;
     max-width: 1000px;
-   object-fit: cover;  
+    object-fit: cover;
     align-items: center;
 
-    background-image: url(./public/assets/23-fondo.jpg);
+    background-image: url(./public/assets/23-fondo.avif);
     margin: 30px auto;
     border-radius: 15px;
  }
 
  .container {
-   background-color: rgb(104, 119, 137);
-   border-radius: 15px;
-   border: 2px white solid;
-   margin: 100px auto;
+    background-color: rgb(104, 119, 137);
+    border-radius: 15px;
+    border: 2px white solid;
+    margin: 100px auto;
  }
 
  #patrocinadores {
-     
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap;
-      gap: 20px;
-      margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin: 10px auto;
  }
