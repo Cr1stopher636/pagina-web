@@ -332,6 +332,8 @@
  /* CONTENEDOR PADRE */
  .contenedor-bloques-index {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
     max-width: 1300px;
     /* El ancho estándar actual suele variar entre 1100px y 1400px */
     width: 90%;
