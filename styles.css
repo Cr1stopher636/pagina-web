@@ -156,13 +156,14 @@
  body {
     width: 100%;
     background-size: cover;
-   
+
     background-image: url(./public/assets/00-fondo.jpg);
     background-repeat: no-repeat;
     min-width: max-content;
     display: block;
-   } 
-    /*Fuerza al fondo a expandirse hasta el final del contenido más ancho
+ }
+
+ /*Fuerza al fondo a expandirse hasta el final del contenido más ancho
 
 
 
@@ -292,8 +293,6 @@
 
  .models {
     max-width: 200px;
-
-
  }
 
 
@@ -361,13 +360,28 @@
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
  }
 
- .dot-menu {
-   background-color: red;
-   box-sizing: border-box;
-   width: 50px;
-   height: 50px;
-   position: fixed;
-   top: 10px;
+ .segunda-tarjeta {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    height: 300px;
+    align-items: center;
+
+    background-color: rgb(129, 160, 164);
+    border: 2px white solid;
+    margin: 50px;
  }
 
+ .container {
+   background-color: rgb(36, 87, 119);
+   border: 2px black solid;
+   border-radius: 10px;
+   margin: 5px;
+ }
 
+ .amg-imagen, img {
+      width: 50%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+ }
