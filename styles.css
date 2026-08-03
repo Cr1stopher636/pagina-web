@@ -366,9 +366,11 @@
     height: 300px;
     align-items: center;
 
+
     background-color: rgb(129, 160, 164);
     border: 2px white solid;
     margin: 50px auto;
+    border-radius: 15px;
  }
 
  .container {
