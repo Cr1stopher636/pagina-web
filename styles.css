@@ -151,6 +151,8 @@
  }
 
 
+
+
  body {
     width: 100%;
     background-size: cover;
@@ -159,8 +161,9 @@
     background-repeat: no-repeat;
     min-width: max-content;
     display: block;
-    /*Fuerza al fondo a expandirse hasta el final del contenido más ancho */
- }
+   } 
+    /*Fuerza al fondo a expandirse hasta el final del contenido más ancho
+
 
 
 
@@ -206,29 +209,17 @@
  /* CONTENEDOR DE ESPECIFICACIONES */
  .contenedor-especificaciones {
     width: 300px;
-    display: flex;
-    flex-direction: row-reverse;
-
-  
-  
-    position: relative;
+    position: fixed;
     top: 10px;
-    left: 710px;
+
+
     justify-content: center;
-
-
-
-    align-items: center;
 
  }
 
 
  /* ESPECIFICACIONES */
  .subcontenedor-especificaciones {
- 
- 
-
-
     border: 2px white inset;
     margin: 20px;
 
@@ -250,13 +241,12 @@
  }
 
 
-.galeria,
- img {
+ .galeria {
     width: 100%;
     height: 250px;
     object-fit: cover;
     display: block;
- }  
+ }
 
 
 
@@ -342,13 +332,10 @@
  /* CONTENEDOR PADRE */
  .contenedor-bloques-index {
     display: flex;
-
-
     max-width: 1300px;
     /* El ancho estándar actual suele variar entre 1100px y 1400px */
     width: 90%;
     /* Deja un pequeño margen de seguridad en pantallas móviles */
-
     margin: 0 auto;
  }
 
@@ -357,9 +344,7 @@
  /* CONTENEDO 2HIJO - PADRE */
  .models {
     max-width: 1300px;
-
     margin: 5px;
-
     border: 2px white inset;
     background-color: rgba(149, 136, 136, 0.198);
 
@@ -373,3 +358,14 @@
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
  }
+
+ .dot-menu {
+   background-color: red;
+   box-sizing: border-box;
+   width: 50px;
+   height: 50px;
+   position: fixed;
+   top: 10px;
+ }
+
+
