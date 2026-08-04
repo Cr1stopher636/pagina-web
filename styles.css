@@ -333,6 +333,8 @@
     flex-direction: row-reverse;
     justify-content: center;
     max-width: 1000px;
+
+
     /* El ancho estándar actual suele variar entre 1100px y 1400px */
     width: 90%;
     /* Deja un pequeño margen de seguridad en pantallas móviles */
@@ -360,34 +362,231 @@
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
  }
 
+
+
+ .primera-tarjeta {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    object-fit: cover;
+    
+    background-image: url(./public/assets/22-fondo.avif);
+    margin: 30px auto;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+ }
+
  .segunda-tarjeta {
     display: flex;
-    flex-direction: column;
-    max-width: 1000px;
+    flex-direction: column-reverse;
+    width: 1200px;
     object-fit: cover;
     align-items: center;
+   
 
     background-image: url(./public/assets/23-fondo.avif);
     margin: 30px auto;
     border-radius: 15px;
-    border: 2px white solid;
     padding: 30px;
+    box-sizing: border-box;
  }
+
+ .tercera-tarjeta {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1200px;
+    object-fit: cover;
+    align-items: center;
+
+    margin: 30px auto;
+    border-radius: 15px;
+   
+    padding: 30px;
+    box-sizing: border-box;
+ }
+
+ .cuarta-tarjeta {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1200px;
+    object-fit: cover;
+    align-items: center;
+
+    margin: 30px auto;
+    border-radius: 15px;
+   
+    padding: 30px;
+    box-sizing: border-box;
+ }
+
+ .quinta-tarjeta {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1200px;
+    object-fit: cover;
+    align-items: center;
+
+    margin: 30px auto;
+    border-radius: 15px;
+  
+    padding: 30px;
+    box-sizing: border-box;
+ }
+
+ .sexta-tarjeta {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1200px;
+    object-fit: cover;
+    align-items: center;
+
+    margin: 30px auto;
+    border-radius: 15px;
+   
+    padding: 30px;
+    box-sizing: border-box;
+ }
+
+
+ .septima-tarjeta {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1200px;
+    object-fit: cover;
+    align-items: center;
+
+    margin: 30px auto;
+    border-radius: 15px;
+   
+    padding: 30px;
+    box-sizing: border-box;
+ }
+
+
+
 
  .container {
-    background-color: rgb(104, 119, 137);
-    border-radius: 15px;
-    border: 2px white solid;
-    margin: 30px auto;
+   box-sizing: border-box;
+   border-radius: 10px;
+   background-color: rgb(144, 137, 137);
  }
 
+
+ 
+  
+
+
+
+
+ #escalade {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+ }
+
+ #escalade:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+ #darkhorse {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+ }
+
+ #darkhorse:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+ #porsche911 {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+
+ }
+
+ #porsche911:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+
+
+ #ferrari {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+
+ }
+
+ #ferrari:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+ #utopia {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+
+ }
+
+ #utopia:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+
+ #rover {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+
+ }
+
+ #rover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+
+
+
  #patrocinadores {
+    border: 2px white inset;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
-    gap: 20px;
+
+
     margin: 10px auto;
  }
 
