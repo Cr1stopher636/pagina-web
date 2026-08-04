@@ -344,16 +344,7 @@
 
 
  /* CONTENEDO 2HIJO - PADRE */
- .models {
-    max-width: 1300px;
-    margin: 5px;
-    border: 2px white inset;
-    background-color: rgba(209, 221, 233, 0.198);
-    border-radius: 10px;
 
-    /* Optimización de la transición solo de lo que cambia */
-    transition: all 0.3s ease;
- }
 
 
  .models:hover {
@@ -366,10 +357,10 @@
 
  .primera-tarjeta {
     display: flex;
-    flex-direction: row;
-    width: 600px;
+    flex-direction: column;
+    width: 900px;
     object-fit: cover;
-    
+
     background-image: url(./public/assets/22-fondo.avif);
     margin: 30px auto;
     border-radius: 15px;
@@ -380,12 +371,11 @@
  .segunda-tarjeta {
     display: flex;
     flex-direction: column-reverse;
-    width: 1200px;
+    width: 900px;
     object-fit: cover;
     align-items: center;
-   
 
-    background-image: url(./public/assets/33-fondo.jpg);
+    background-image: url(./public/assets/22-fondo.avif);
     margin: 30px auto;
     border-radius: 15px;
     padding: 30px;
@@ -395,13 +385,13 @@
  .tercera-tarjeta {
     display: flex;
     flex-direction: column-reverse;
-    width: 1200px;
+     width: 900px;
     object-fit: cover;
     align-items: center;
 
     margin: 30px auto;
     border-radius: 15px;
-     background-image: url(./public/assets/33-fondo.jpg);
+    background-image: url(./public/assets/22-fondo.avif);
     padding: 30px;
     box-sizing: border-box;
  }
@@ -409,14 +399,14 @@
  .cuarta-tarjeta {
     display: flex;
     flex-direction: column-reverse;
-    width: 1200px;
+      width: 900px;
     object-fit: cover;
     align-items: center;
 
     margin: 30px auto;
     border-radius: 15px;
-      background-image: url(./public/assets/33-fondo.jpg);
-   
+    background-image: url(./public/assets/22-fondo.avif);
+
     padding: 30px;
     box-sizing: border-box;
  }
@@ -424,14 +414,14 @@
  .quinta-tarjeta {
     display: flex;
     flex-direction: column-reverse;
-    width: 1200px;
+     width: 900px;
     object-fit: cover;
     align-items: center;
-     background-image: url(./public/assets/33-fondo.jpg);
+    background-image: url(./public/assets/22-fondo.avif);
 
     margin: 30px auto;
     border-radius: 15px;
-  
+
     padding: 30px;
     box-sizing: border-box;
  }
@@ -439,14 +429,14 @@
  .sexta-tarjeta {
     display: flex;
     flex-direction: column-reverse;
-    width: 1200px;
+    width: 900px;
     object-fit: cover;
     align-items: center;
-     background-image: url(./public/assets/33-fondo.jpg);
+    background-image: url(./public/assets/22-fondo.avif);
 
     margin: 30px auto;
     border-radius: 15px;
-   
+
     padding: 30px;
     box-sizing: border-box;
  }
@@ -455,14 +445,14 @@
  .septima-tarjeta {
     display: flex;
     flex-direction: column-reverse;
-    width: 1200px;
+     width: 900px;
     object-fit: cover;
     align-items: center;
-      background-image: url(./public/assets/33-fondo.jpg);
+    background-image: url(./public/assets/22-fondo.avif);
 
     margin: 30px auto;
     border-radius: 15px;
-   
+
     padding: 30px;
     box-sizing: border-box;
  }
@@ -471,14 +461,24 @@
 
 
  .container {
-   box-sizing: border-box;
-   border-radius: 10px;
-   background-color: rgb(144, 137, 137);
+    border-radius: 10px;
+    background-color: rgb(144, 137, 137);
+
+    transition: all 0.3s ease;
+ }
+
+ .container:hover {
+    background-color: rgba(147, 177, 193, 0.559);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
  }
 
 
- 
-  
+
+
+
+
+
 
 
 
@@ -584,6 +584,7 @@
 
 
  #patrocinadores {
+    max-width: 1300px;
     border: 2px white inset;
     display: flex;
     flex-direction: row;
