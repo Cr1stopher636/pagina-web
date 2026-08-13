@@ -157,7 +157,7 @@
     width: 100%;
     background-size: cover;
 
-    background-image: url(./public/assets/00-fondo.jpg);
+    background-image: url(./public/assets/00-fondo.avif);
     background-repeat: no-repeat;
     min-width: max-content;
     display: block;
