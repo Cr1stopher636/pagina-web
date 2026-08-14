@@ -1,4 +1,5 @@
-const sistema = require('node:os')
+
+const sistema = require ('node:os');
 
 console.log("info del sistema operativo");
 console.log("----------->")
