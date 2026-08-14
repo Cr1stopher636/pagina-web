@@ -1,1 +1,1 @@
-console.log("hola desde el archivo externo");
+const nombre = require('./cjs/1.2suma')
