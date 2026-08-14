@@ -9,3 +9,4 @@ console.log("CPUs", sistema.cpus()); // Vamos a poder escalar procesos con node
 console.log("Memoria libre", sistema.freemem() / 1024 / 1024);
 console.log("Memoria total", sistema.totalmem() / 1024 / 1024);
 console.log(process.memoryUsage());
+console.log(sistema.uptime() / 60 / 60);
