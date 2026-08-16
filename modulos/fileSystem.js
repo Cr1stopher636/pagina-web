@@ -1,11 +1,21 @@
-const usuario = require('./archivo');
+const resultado = require('./archivo') 
+console.log(resultado.usuario.edad);
 
-console.log(usuario);
-console.log(usuario.usuario);
-console.log(usuario.usuario2);
-console.log(usuario.usuario3);
+const obtenerInfoSistema = require('./copy')
+obtenerInfoSistema();
 
-console.log(usuario.usuario3.profesión);
+
+
+
+
+
+// console.log(resultado);
+// console.log(resultado.usuario);
+// console.log(resultado.usuario2);
+// console.log(resultado.usuario3);
+
+// console.log(resultado.usuario3.profesión);
+
 
 
 
