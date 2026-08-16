@@ -5,4 +5,4 @@
 import { sum, rest, mult } from "./suma.mjs";
 console.log(sum(1, 2));
 console.log(rest(1, 2));
-console.log(mult(1, 2));
+console.log(mult(2, 2));
