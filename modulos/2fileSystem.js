@@ -1,1 +1,0 @@
-const fs = require('node:fs') //a partir de node16
