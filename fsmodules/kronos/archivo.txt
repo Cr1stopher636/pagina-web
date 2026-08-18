@@ -1,1 +1,1 @@
-cambio de texto con ricardo el ingeniero
+Este es el contenido del archivo.txt
