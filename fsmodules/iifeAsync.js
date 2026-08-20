@@ -8,11 +8,6 @@ const fs = require('node:fs/promises');
 })();
 
 
-// const varibable = (function () {
-//     const variable = "hola";
-
-//     return variable;
-// })();
 
 
 
