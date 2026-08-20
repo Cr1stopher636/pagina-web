@@ -1,13 +1,3 @@
-const { readFile } = require('node:fs/promises');
-
-const variable = await readFile('./archivo3.txt', 'utf-8', (err, text) => {
-    console.log(variable);
-});
-
-
-
-
-
 
 // (async () => {
 //     const variable = await readFile('./archivo3.txt', 'utf-8')
