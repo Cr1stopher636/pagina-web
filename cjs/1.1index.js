@@ -1,5 +1,5 @@
 // Common JS require module
-const { rest } = require('./1.2suma')
+const { resta } = require('./1.4resta')
 const { sum } = require('./1.2suma')
 
 console.log(sum(1, 2));
