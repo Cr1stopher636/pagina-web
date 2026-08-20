@@ -1,1 +1,2 @@
-"Contenido del archivo2.txt"
+
+"Este es el contenido del archivo2.txt"
