@@ -9,7 +9,13 @@ class persona { //Clase en javascript
     }
 }
 
+const usuario = new persona("ricardo", 23);
+const usuario2 = new persona("Andrea", 19);
+console.log(usuario.edad);
+console.log(usuario2.edad);
+
+
 //Objeto instancial
-const variable = new persona("juan", 23);
+// const variable = new persona("juan", 23);
 // const variable = new persona("Ricardo", 23);
-variable.saludar();
+// console.log(variable);
