@@ -17,12 +17,6 @@ import { stat } from 'node:fs'; //con fileSystem
 
 
 
-
-
-
-
-
-
 // console.log(
 //     stats.isFile(),
 //     stats.isDirectory(),
