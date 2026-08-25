@@ -1,18 +1,27 @@
 // Promesa explícita
-const fs = require('node:fs/promises');
-
-
 const variable = new Promise((resolve, reject) => {
-    const exito = false;
+    const exito = true;
 
     if (exito) {
-        resolve('se completo la promesa')
+        resolve('Se completo la promesa con éxito')
     } else {
-        reject('no se completo la promesa')
+        reject('No se completo la promesa')
     }
 });
 
-console.log(variable);
+// variable //Para consumir una promise
+//     .then((mensaje) => {
+//         console.log(mensaje)
+//     })
+
+//     .catch((error) => {
+//         console.log(error);
+//     });
+
+
+
+
+
 
 
 
