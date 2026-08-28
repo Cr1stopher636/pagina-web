@@ -1,8 +1,6 @@
 const fs = require('node:fs/promises');
+const folder = process.argv;
 
-
-
-const folder = process.argv[2] ?? '.';
 
 fs.readdir(folder)
     .then(element => {
@@ -12,7 +10,7 @@ fs.readdir(folder)
         });
     })
     .catch(err => {
-        console.error('Error al leer el directorio', err);
+        console.error('Papi hay un Error al leer el directorio', err);
     });
 
 
