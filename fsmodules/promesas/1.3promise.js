@@ -3,7 +3,7 @@ const fs = require('node:fs/promises');
 
 async function init() {
     try {
-        const miPromesa = await fs.readFile('./1.5promise.js', 'utf-8');
+        const miPromesa = await fs.readFile('./fspromise.js', 'utf-8');
         console.log("Se puedo leer el archivo!");
         console.log(miPromesa);
 
