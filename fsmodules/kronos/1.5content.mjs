@@ -1,0 +1,1 @@
+import { text, secondtext } from "./1.4parallel.mjs";
