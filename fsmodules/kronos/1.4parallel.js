@@ -12,7 +12,7 @@ async function init() {
     }
 };
 
-
+export { init };
 init();
 
 // const text = await readFile('./archivo.txt', 'utf-8')
