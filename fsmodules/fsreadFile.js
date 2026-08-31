@@ -6,16 +6,16 @@ readFile('./archivo2.txt', 'utf-8', (err, text) => {
         console.log("Error al leer archivo2:", err);
         return;
     }
-    console.log("Primer texto:", text);
+    console.log("Primero:", text);
 });
 
 console.log("leyendo el segundo archivo...")
 readFile('./archivo3.txt', 'utf-8', (err, text) => {
     if (err) {
-        console.log("erro al leer el archivo2", err);
+        console.log("error al leer el archivo3", err);
         return;
     } 
-    console.log("segundo archivo: ", text);
+    console.log("Segundo:", text);
 });
 
 
