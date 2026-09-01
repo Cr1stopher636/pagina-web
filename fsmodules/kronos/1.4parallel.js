@@ -1,20 +1,85 @@
-// Asincronía en paralelo
-import { readFile } from "node:fs/promises";
-async function init() {
-    try {
-        const miPromesa = await readFile('./archivo2.txt', 'utf-8');
-        console.log("Se pudo leer el archivo!");
-        console.log('Este es el contenido ----> : ', miPromesa);
+// Asincronía secuencial
+// const fs = require('node:fs/promises');
 
-    } catch (error) {
-        console.log("No se pudo leer el archivo !");
-        console.error('Error:', error.message);
+// async function init() {
+//     const variableSegunda = await fs.readFile('./archivo.txt', 'utf-8')
+//     console.log('Ejecutando el primer archivo')
+//     console.log(variableSegunda);
+
+//     const variableTercera = await fs.readFile('./archivo12.txt', 'utf-8')
+//     console.log('Ejecutando el segundo archivo')
+//     console.log(variableTercera);
+// }
+
+// init();
+
+// Asincronía con Callback
+const fs = require('node:fs');
+
+
+
+fs.readFile('./archivo2.txt', 'utf-8'), (err, text) => {
+    if (err) {
+        console.log(err)
+    } else {
+        console.log(text)
     }
 };
 
-export { init };
-init();
 
+
+
+
+
+
+
+
+
+
+// const variableTercera = await fs.readFile('./archivo2.txt', 'utf-8')
+// console.log('Ejecutando el segundo archivo')
+// console.log(variableTercera);
+
+
+// init();
+
+
+// Sincronía
+// const variable = fs.readFileSync('./archivo.txt', 'utf-8');
+// console.log('Ejecutando el primer archivo...')
+// console.log('---->', variable);
+
+// const svariable = fs.readFileSync('./archivo2.txt', 'utf-8');
+// console.log('Ejecutando el segundo archivo...')
+// console.log('---->', svariable);
+
+
+
+// En Paralelo
+// Promise.all([
+//     readFile('./archivo.txt', 'utf-8'),
+//     readFile('./archivo2.txt', 'utf-8')
+// ]).then(([text, secondtext]) => {
+//     console.log('Este es el primer contenido:', text)
+//     console.log('Este es el segundo contenido:', secondtext)
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+// export { init };
+
+
+
+// Top Level Await
 // const text = await readFile('./archivo.txt', 'utf-8')
 // const secondtext = await readFile('./archivo2.txt', 'utf-8');
 
@@ -44,18 +109,17 @@ init();
 //     console.log(text);
 // });
 
-// import { readFile } from 'node:fs';
 
-// export async function init() {
-//     await readFile('./archivo.txt', 'utf-8', (err, text) => {
-//         if (err) {
-//             console.log(err)
-//         } 
-//         console.log(text)
-//     });
-// }
 
-// init();
+
+// await readFile('./archivo.txt', 'utf-8', (err, text) => {
+//     if (err) {
+//         console.log(err)
+//     }
+//     console.log('Este es el contenido: --->', text)
+// });
+
+
 
 
 
