@@ -14,4 +14,3 @@ promesa
         console.log(error);
     });
 
-console.log(promesa);
