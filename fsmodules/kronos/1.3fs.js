@@ -3,12 +3,8 @@
 // const readFilePromise = promisify(fs.readFile)
 
 
-
-
 const fs = require('node:fs/promises');
 
-
- 
 
 (async () => {
     const resultado = await fs.readFile('./archivo.txt', 'utf-8')
