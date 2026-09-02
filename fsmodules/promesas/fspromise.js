@@ -18,7 +18,7 @@ const variable = new Promise((resolve, reject) => {
 //         console.log(error);
 //     });
 
-
+// console.log(variable);
 
 
 
