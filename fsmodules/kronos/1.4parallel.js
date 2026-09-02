@@ -16,8 +16,6 @@
 // Asincronía con Callback
 const fs = require('node:fs');
 
-
-
 fs.readFile('./archivo2.txt', 'utf-8'), (err, text) => {
     if (err) {
         console.log(err)
@@ -35,10 +33,10 @@ fs.readFile('./archivo2.txt', 'utf-8'), (err, text) => {
 
 
 
-
-// const variableTercera = await fs.readFile('./archivo2.txt', 'utf-8')
-// console.log('Ejecutando el segundo archivo')
-// console.log(variableTercera);
+// Top Level Await
+const variableTercera = await fs.readFile('./archivo2.txt', 'utf-8')
+console.log('Ejecutando el segundo archivo')
+console.log(variableTercera);
 
 
 // init();
