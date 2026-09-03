@@ -1,7 +1,7 @@
 //Retorno
 const nombre = (function () {
-    const variable = "Este es el mensaje";
-    return variable;
+const variable = "Este es el mensaje";
+return variable;
 })();
 
-console.log(nombre);
+console.log(nombre)
