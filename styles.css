@@ -150,9 +150,6 @@
     color: white;
  }
 
-
-
-
  body {
     width: 100%;
     background-size: cover;
@@ -342,6 +339,14 @@
     /* Deja un pequeño margen de seguridad en pantallas móviles */
     margin: 0 auto;
  }
+
+
+ 
+
+ .imagenes_de_lujo {
+   display: flex;
+}
+
 
 
 
