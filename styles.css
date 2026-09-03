@@ -80,7 +80,7 @@
     text-align: center;
     margin: 20px;
     border-radius: 10px;
-    background-image: url(./public/assets/00-fondo.jpg);
+    background-image: url(./public/assets/00-fondoForm.jpg);
     opacity: 0.9;
     border: 2px white inset;
     background-color: rgba(42, 118, 165, 0.331);
@@ -310,11 +310,13 @@
  /* CONTENEDOR HIJO */
  .bloque {
     max-width: 300px;
-    background-image: url(/public/assets/12-fondo:bentley.avif);
+    background-image: url(/public/assets/12-fondo.jpg);
 
     margin: 10px;
     transition: all 0.3s ease;
-    border: 2px white solid;
+    border: 5px white solid;
+    border-radius: 3px;
+    
  }
 
 
@@ -360,7 +362,7 @@
     object-fit: cover;
 
     background-image: url(./public/assets/22-fondo.avif);
-    margin: 30px auto;
+    margin: 10px auto;
     border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
@@ -447,6 +449,7 @@
 
 
  .container {
+
     border-radius: 10px;
     background-color: rgb(144, 137, 137);
 
@@ -568,7 +571,7 @@
 
 
  #patrocinadores {
-    max-width: 1300px;
+    max-width: 1200px;
     border: 2px white inset;
     display: flex;
     flex-direction: row;
@@ -583,12 +586,13 @@
     width: 300px;
     height: auto;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 50px;
+    margin: 10px;
 
     transition: all 0.3s ease;
  }
 
  #patrocinadores img:hover {
-    transform: translateY(-8px);
+    transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
  }
