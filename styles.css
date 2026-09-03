@@ -566,18 +566,6 @@
 
  }
 
- .patrocinador {
-   display: flex;
-    width: 300px;
-
-    transition: all 0.3s ease;
- }
-
- .patrocinador:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
- }
-
 
  #patrocinadores {
     max-width: 1300px;
