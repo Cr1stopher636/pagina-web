@@ -5,6 +5,6 @@ const server = http.createServer((req, res) => {
     res.end('hola mundo')
 })
 
-server.listen(3000, () => {
-    console.log('esta escuchando')
+server.listen(51123, () => {
+    console.log(server.address().port)
 })
