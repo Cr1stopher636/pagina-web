@@ -1,21 +1,18 @@
+const path = require('node:path');
 
-const fs = require('node:fs');
+// unir rutas con path.join
+const ruta = path.basename('Desktop/web/fsmodules/procesos/1.6advance.js')
+// console.log(ruta);
 
-console.log('Este es el primer archivo ------');
-fs.readFile('./1.1proces.js', 'utf-8', (err, text) => {
-    console.log(text)
-})
 
-console.log('Este es el primer archivo ------');
-fs.readFile('./1.1proces.js', 'utf-8', (err, text) => {
-    console.log(text)
-})
+const base = path.basename('Desktop/web/fsmodules/procesos/1.6advance.js', '.js')
+// console.log(base)
+// console.log(base)
 
-// fs.readFile('./1.5advance.js', 'utf-8', (err, text) => {
-//     console.log(text);
 
-// });
+const base2 = path.basename('1.6advance.js', 'web')
 
+// console.log(path.sep) // Para ver la barra 
 
 
 

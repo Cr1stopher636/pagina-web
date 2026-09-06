@@ -16,3 +16,16 @@ console.log(process.argv);
 
 // current working directory
 // console.log(process.cwd());
+
+// console.log(process.argv[0]);
+// const base = path.extname('hola.jpg')
+
+
+// proceso de salida
+// process.exit(1)
+
+// controlar eventos de ProcessingInstruction
+// console.log(process.cwd()) // muestra desde donde se ejecuta 
+
+
+// console.log(process.env.VARIABLE)
