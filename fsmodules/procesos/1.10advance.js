@@ -1,4 +1,4 @@
-
+console.log(process.arch)
 
 
 
