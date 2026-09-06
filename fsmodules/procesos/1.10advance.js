@@ -1,9 +1,8 @@
-const fs = require('node:fs');
 
 
 
-const variable = await fs.readdir('./procesos123')
-console.log(variable);
+
+
 
 
 
