@@ -2,14 +2,8 @@ const fs = require('node:fs/promises');
 
 
 const archivos = process.argv[2];
+console.log(archivos);
 
-async function init(directorio) {
 
-    const filePath = await fs.readdir(directorio);
 
-    console.log(filePath);
-
-}
-
-init(archivos);
 
