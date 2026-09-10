@@ -13,8 +13,9 @@ async function init(directorio) {
     }
 
     try {
+        let stats;
 
-        const stats = await fs.stat(directorio)
+        stats = await fs.stat(directorio)
 
         if (!stats.isDirectory()) {
              console.error('La ruta proporcionada no es un directorio');
@@ -23,7 +24,7 @@ async function init(directorio) {
 
         const variable = await fs.readdir(directorio)
         
-        variable.map(element => {
+        variable.forEach(element => {
             console.log('Todo salio correcto Papi✅', element);
         })
 
