@@ -2,32 +2,28 @@ const fs = require('node:fs/promises');
 
 const rutaDirectorio = process.argv[2] ?? '.';
 
-fs.readdir(rutaDirectorio)
-    .then(file => {
-        file.map(element => {
-            console.log('Salio 👍', element)
+async function init(dir) {
+    try {
+        const files = await fs.readdir(dir)
+        files.forEach(element => {
+            console.log(`Elementos: ${element}`);
         })
-    })
 
-    .catch(err => {
-        console.log('Salio mal papi❌😔', err);
-        return;
-    })
+    } catch (err) {
+        console.log(`Error al leer el directorio: 😔❌`);
+    }
 
-// async function init() {
-  
+    let stats = await fs.stat(dir)
 
-// }
 
-// init();
+}
+
+init(rutaDirectorio);
 
 
 
 
-// console.error('Error al leer el directorio', err)
-// console.error(err.message);
-// process.exit(1);
 
 
 
-// init(rutaDirectorio);
+
