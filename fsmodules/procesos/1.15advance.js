@@ -1,5 +1,3 @@
-
-
 const fs = require('node:fs/promises');
 
 const file = process.argv[2];

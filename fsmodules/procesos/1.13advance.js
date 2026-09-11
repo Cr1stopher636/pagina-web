@@ -68,7 +68,7 @@ async function init(directorio) {
     try {
         archivos = await fs.readdir(directorio);
         archivos.map(async (directorio) => {
-            console.log('Elementos: --> ', directorio);
+            console.log('Elementos:✅', directorio);
         })
 
     } catch (err) {
@@ -76,14 +76,9 @@ async function init(directorio) {
         return;
     }
 
-    const primerVariable = archivos.map(async (archivo) => {
-        const variable2 = await fs.readdir(directorio)
-
-        return variable2;
-    })
 
 const filePromises = archivos.map(async (elemento) => {
-        const filePath = await path.join(directorio, elemento);
+        const filePath = path.join(directorio, elemento);
 
         try {
             const stat = await fs.stat(filePath);
@@ -93,17 +88,29 @@ const filePromises = archivos.map(async (elemento) => {
             return null;
         }
     });
+    const resultados = await Promise.all(filePromises);
+
+const archivosValidos = resultados.filter((item) => item !== null);
+
+console.log('Resultados procesados: ', archivosValidos);
+return archivosValidos;
+
+}
+
+init(leer);
+
+
+
+
 
 
 
 // Para esperar a que terminen todas las promesas:
-const resultados = await Promise.all(filePromises);
+// const resultados = await Promise.all(filePromises);
 
-const archivosValidos = resultados.filter(elemento => elemento !== null);
-console.log(archivosValidos);
-}
+// const archivosValidos = resultados.filter(elemento => elemento !== null);
+// console.log(archivosValidos);
 
-init(leer);
 
 
 
