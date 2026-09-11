@@ -102,9 +102,6 @@ init(leer);
 
 
 
-
-
-
 // Para esperar a que terminen todas las promesas:
 // const resultados = await Promise.all(filePromises);
 
