@@ -1,4 +1,3 @@
-const { resolve } = require('node:dns')
 const net = require('node:net') //  TCP
 
 function finePort(desirePort) {
