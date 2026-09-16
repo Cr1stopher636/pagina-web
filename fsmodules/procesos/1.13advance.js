@@ -1,10 +1,5 @@
-// const message = 'Hola mundo';
 
-// const devolver = (file) => {
-//     return file;
-// }
 
-// console.log(devolver(message));
 
 // const path = require('node:path'); //MODULO PARA RUTAS DE ARCHIVOS Y DIRECTORIOS
 
@@ -13,24 +8,37 @@
 // const extension = path.extname('1.12dvance.js') // OBTIENE EL NOMBRE DE LA EXTENSIÓN
 // const readDir = path.dirname('ricardoyanez/desktop/web/fsmodules/procesos') // OBTIENE EL NOMBRE DEL DIRECTORIO
 
-// const fs = require('node:fs/promises');
+
+
 // const path = require('node:path');
 
-// const folder = './';
+const { read } = require('node:fs');
+const fs = require('node:fs/promises');
+const path = require('node:path');
 
-// async function init() {
-//     try {
-//         const files = await fs.readdir(folder);
-//         files.forEach(elemento => {
-//             const rutaArchivo = path.join(folder, elemento);
-//             console.log('Contenido✅', rutaArchivo);
-//         })
-//     } catch (err) {
-//         console.log('Error al leer el directorio❌😩❌');
-//     }
-// }
+const folder = './';
+const file = 'archivo.txt';
 
-// init();
+async function init() {
+
+        try {
+        console.log('Ejecutando el primer archivo...🥇')
+           const readFile = await fs.readFile(file, 'utf-8')
+           console.log(readFile);
+        console.log('Ejecutando el segundo archivo...🥈')
+           const dir = await fs.readdir(folder);
+           console.log(dir);
+        console.log('Ejecutando la ruta...🧭');
+           const rutaCompleta = path.join(folder, file)
+           console.log(rutaCompleta);
+        }
+
+        catch (err) {
+              console.error('Error al leer el directorio');
+        }
+} 
+
+init();
 
 
 
