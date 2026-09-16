@@ -26,7 +26,12 @@
 
 // console.log('Precio final aplicado con cupón del 10% --> :', calcularPrecio(50, 'DESCUENTO10'));
 
+
+
 // const fs = require('node:fs/promises');
+
+
+// 2NDO EJERCICIO
 
 // async function init() {
 //     const file = process.argv[2];
@@ -35,6 +40,7 @@
 //         console.error('Ingresa una ruta');
 //         process.exit(1);
 //     }
+
 //     try {
 //         const status = await fs.stat(file);
 //         console.log('Contenido:✅', '\n', status);
