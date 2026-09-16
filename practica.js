@@ -53,6 +53,26 @@
 //     console.log('Contenido:✅', '\n', text);
 // })
 
+// 5ta forma de ejecutar una Promise con .then
+
+const fs = require('node:fs/promises');
+
+const file = ['Mercedes', 'Continental', 'Porsche'];
+
+async function init() {
+    const miPromesa = await Promise.all((resolve, reject) => {
+        let variable = true;
+
+        if (variable) {
+            resolve('Se ejecuto bien');
+        } else {
+            reject('Salio mal');
+        }
+    })
+}
+
+
+
 
 
 
