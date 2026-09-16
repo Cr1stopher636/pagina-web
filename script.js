@@ -1,10 +1,13 @@
-const diccionario = ['nombre','ricardo','edad', 23];
-diccionario.forEach(element => {
-    console.log(element);
-});
+// const diccionario = ['nombre','ricardo','edad', 23];
+// diccionario.forEach(element => {
+//     console.log(element);
+// });
 
 
-
+const diccionario = ['nombre', 'ricardo', 'edad', 23];
+diccionario.forEach(items => {
+    console.log(items);
+})
 
 
 
