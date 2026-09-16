@@ -1,5 +1,5 @@
 // Acceso dinamico
-// const persona = {
+// const persona = { // OBJETO PERSONA
 //     nombre: 'ricardo',
 //     edad: 23,
 //     profesionalidad: 'Ingeniero en software'
@@ -7,7 +7,7 @@
 
 // const clave = persona.profesionalidad;
 // console.log(clave);
-//console.log(persona.profesionalidad); // BUSCAMOS DESDE EL INDICE 
+// console.log(persona.profesionalidad); // BUSCAMOS DESDE EL INDICE 
 
 
 
@@ -26,16 +26,23 @@
 
 // console.log('Precio final aplicado con cupón del 10% --> :', calcularPrecio(50, 'DESCUENTO10'));
 
+// const fs = require('node:fs/promises');
 
+// async function init() {
+//     const file = process.argv[2];
 
-// try {
-//     const lista = await fs.readFile(dir, 'utf-8');
-//     const contenido = lista.split('\n');
+//     if (file === undefined || file === null) {
+//         console.error('Ingresa una ruta');
+//         process.exit(1);
+//     }
+//     try {
+//         const status = await fs.stat(file);
+//         console.log('Contenido:✅', '\n', status);
+       
 
-//     contenido.map(files => {
-//         console.log('Contenido✅ :--->', files);
-//     })
-
-// } catch (err) {
-//     console.error('Error al recorrer el array:❌😩 ');
+//     } catch (err) {
+//         console.error('Error al recorrer el array:❌😩 ');
+//     }
 // }
+
+// init();
