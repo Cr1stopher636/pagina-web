@@ -7,7 +7,7 @@ const usuario = {
 const usuario2 = { 
     nombre: "andrea", rol: "UX",
     edad: 21,
-    profesión: "Licenciada en Mercadología"
+    profesión: "Licenciada en Mercadotecnia"
 };
 
 const usuario3 = { 
