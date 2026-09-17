@@ -1,32 +1,23 @@
-const { createServer } = require('node:http');
-const fs = require('node:fs/promises');
-const path = require('node:path');
+const http = require('node:http')
+const desirePort = process.env.PORT ?? 3000;
+const { fineavaliblePort } = require('./freePort')
+const server = http.createServer((req, res) => {
+    console.log('Solicitud aceptada✅');
+    res.end('Hola PapiRick')
+})
 
-const hostname = '127.0.0.1';
-const port = 3001;
 
-const server = createServer(async (req, res) => {
+fineavaliblePort(desirePort).then(port => {
+    server.listen(port, () => {
+        console.log('Server escuchando en ', port)
+    })
+})
 
-    try {
 
-        const ruta = path.join(hostname, req.url);
 
-        const archivo = await fs.readFile(ruta);
+// setTimeout(() => {
+//     console.log('Han pasado 2 segundos !');
+// }, 2000);
 
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'text/html');
-        res.end(archivo);
 
-    } catch (error) {
 
-        res.statusCode = 404;
-        res.setHeader('Content-Type', 'text/plain');
-        res.end('404 - Archivo no encontrado');
-
-    }
-
-});
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
