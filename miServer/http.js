@@ -9,6 +9,13 @@ const processRequest = (req, res) => {
         res.setHeader('Content-Type', 'text/plain')
         res.setHeader('Charset', 'utf-8')
         res.end('Bienvenido a la pagina de inicio')
+    } else if (req.url === './03-contacto.html') {
+        res.statusCode = 200
+        res.end('<h1>Contacto</h1>')
+
+    } else {
+        res.statusCode = 404;
+        res.end('No se encontro el archivo')
     }
 }
 
