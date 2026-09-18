@@ -3,9 +3,11 @@ const desirePort = process.env.PORT ?? 3000;
 // const { fineavaliblePort } = require('./freePort')
 
 const processRequest = (req, res) => {
+    console.log('Solicitud recibida✅');
     if (req.url === '/') {
         res.statusCode = 200
         res.setHeader('Content-Type', 'text/plain')
+        res.setHeader('Charset', 'utf-8')
         res.end('Bienvenido a la pagina de inicio')
     }
 }
