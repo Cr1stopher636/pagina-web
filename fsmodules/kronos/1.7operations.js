@@ -1,10 +1,22 @@
 const fs = require('node:fs');
 const path = require('node:path');
-const { text } = require('node:stream/consumers');
 
-const file = fs.readFile('./archivo.txt', 'utf-8', (err, text) => {
-    console.log('Contenido del archivo:', text);
+
+fs.readFile('./archivo.txt', 'utf-8', (err, text) => {
+    console.log(text);
 });
+
+console.log('Haciendo cosas...📋');
+
+
+
+fs.readFile('./archivo2.txt', 'utf-8', (err, text) => {
+    console.log(text);
+});
+
+
+
+
 
 
 
