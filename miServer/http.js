@@ -27,6 +27,8 @@ server.listen(desirePort, () => {
     console.log(`Servidor escuchando en ${desirePort}`);
 })
 
+module.exports = { desirePort };
+
 // const processRequest = ((req, res) => {
 //     console.log('Solicitud aceptada✅', req.url);
 //     res.end('Hola papiRick')
