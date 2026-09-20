@@ -5,6 +5,8 @@ readFile('./archivo2.txt', 'utf-8', (err, text) => {
     console.log('Primer texto:', text);
 });
 
+console.log('Hacer cosas...');
+
 console.log("leyendo el segundo archivo...")
 readFile('./archivo3.txt', 'utf-8', (err, text) => {
     console.log('Segundo texto:', text);
