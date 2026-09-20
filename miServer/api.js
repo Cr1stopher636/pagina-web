@@ -6,7 +6,6 @@ const server = http.createServer((req, res) => {
 
     //Cabecera estandar del texto plano
     res.setHeader('Content-Type', 'text/plain; charset=utf-8')
-    
     if (req.url === '/') {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/plain; charset=utf-8')
@@ -19,7 +18,7 @@ const server = http.createServer((req, res) => {
         res.end('Estás en la página de los modelos')
     } else {
         res.statusCode = 404;
-        res.end('Página no encontrada')
+        res.end('404-Página no encontrada')
     }
 });
 
