@@ -6,12 +6,18 @@ const processRequest = (req, res) => {
     console.log('Solicitud recibida✅');
     if (req.url === '/') {
         res.statusCode = 200
-        res.setHeader('Content-Type', 'text/plain')
-        res.setHeader('Charset', 'utf-8')
-        res.end('Bienvenido a la pagina de inicio')
-    } else if (req.url === './03-contacto.html') {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8')
+        res.end(JSON.stringify(({ id: 1, pagina: 'Página principal' })));
+
+    } else if (req.url === '/modelos') {
         res.statusCode = 200
-        res.end('<h1>Contacto</h1>')
+        res.setHeader('Content-Type', 'application/json;; charset=utf-8')
+        res.end(JSON.stringify(({ id: 2, pagina: 'Pagina de modelos' })));
+
+    } else if (req.url === '/contacto') {
+        res.statusCode = 200
+        res.setHeader('Content-Type', 'application/json;; charset=utf-8')
+        res.end(JSON.stringify(({ id: 3, pagina: 'Pagina de contacto' })));
 
     } else {
         res.statusCode = 404;
