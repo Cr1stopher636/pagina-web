@@ -1,26 +1,21 @@
 //import { stat } from 'node:fs/promises'; //con promesas
-import { stat } from 'node:fs'; //con fileSystem
+import fs from 'node:fs';
+
+console.log("leyendo el primer archivo") //asíncrono con callbacks
+const variable = fs.statSync('./archivo2.txt', 'utf-8')
+console.log('Status del primer archivo:✅ ', '\n', variable);
+
+console.log('Hacer cosas mientras leer el archivo');
+
+console.log("leyendo el segundo archivo")
+const variable2 = fs.statSync('archivo3.txt', 'utf-8')
+console.log('Status del segundo archivo:✅ ', '\n', variable2);
 
 
-// console.log("leyendo el primer archivo") //asíncrono con callbacks
-// const variable = stat('archivo2.txt', 'utf-8', (err, text) => {
-//     console.log(text);
-// })
-
-
-// console.log("leyendo el primer archivo") //asíncrono con promises
-// async function init() {
-//     const variable = await stat('archivo2.txt', 'utf-8')
-//     console.log(variable);
-// }
-// init();
-
-
-
-// console.log(
-//     stats.isFile(),
-//     stats.isDirectory(),
-//     stats.isSymbolicLink(),
-//     stats.size
-// );
+console.log(
+    variable.isFile(),
+    variable.isDirectory(),
+    variable.isSymbolicLink(),
+    variable.size
+);
 
