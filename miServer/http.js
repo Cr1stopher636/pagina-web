@@ -11,17 +11,18 @@ const processRequest = (req, res) => {
 
     } else if (req.url === '/modelos') {
         res.statusCode = 200
-        res.setHeader('Content-Type', 'application/json;; charset=utf-8')
+        res.setHeader('Content-Type', 'application/json; charset=utf-8')
         res.end(JSON.stringify(({ id: 2, pagina: 'Pagina de modelos' })));
 
     } else if (req.url === '/contacto') {
         res.statusCode = 200
-        res.setHeader('Content-Type', 'application/json;; charset=utf-8')
+        res.setHeader('Content-Type', 'application/json; charset=utf-8')
         res.end(JSON.stringify(({ id: 3, pagina: 'Pagina de contacto' })));
 
     } else {
         res.statusCode = 404;
-        res.end('No se encontro el archivo')
+        res.setHeader('Content-Type', 'application/json; charset=utf-8')
+        res.end(JSON.stringify('404-No se encontro el archivo'));
     }
 }
 
