@@ -5,24 +5,24 @@ const desirePort = 3000;
 const server = http.createServer((req, res) => {
     console.log('Solicitud aceptada ✅');
 
-    //Cabecera estandar del texto plano
+    //Cabecera estándar del texto html
     if (req.url === '/') {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/html; charset=utf-8');
 
         const listaHtml =
-            `<h1>Imperial Luxury Cars</h1>
-             <p>Este es el Servidor de node.js</p>
-             <p>Imperial Luxury Cars</p>`
 
-
+        `<h1>Imperial Luxury cars</h1>
+        <p>Este es el Servidor de node.js</p>
+        <p>Imperial Luxury Cars</p>
+        `
         res.end(listaHtml)
 
     } else if (req.url === '/modelos') {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json; charset=utf-8');
-        const miObjeto = [({id: 1, nombre: 'ricardo'})]
-        res.end(JSON.stringify(miObjeto))
+        const primerObjeto = [{ id: 1, nombre: 'ricardo' }]
+        res.end(JSON.stringify(primerObjeto))
 
     } else if (req.url === '/contacto') {
         res.statusCode = 200;
@@ -38,19 +38,6 @@ const server = http.createServer((req, res) => {
         res.end('404-Página no encontrada')
     }
 });
-// else if (req.url === '/modelos') {
-//     res.statusCode = 200;
-//     res.setHeader('Content-type', 'application/json; charset=utf-8');
-//     res.end('Página de modelos')
-
-// } else if (req.url === '/contacto') {
-//     res.statusCode = 200;
-//     res.setHeader('Content-type', 'application/json; charset=utf-8');
-//     res.end('Página de contacto')
-
-// }
-
-
 
 server.listen(desirePort, () => {
     console.log(`Servidor escuchando ${desirePort}`);
