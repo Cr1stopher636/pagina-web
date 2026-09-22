@@ -1,5 +1,5 @@
  * {
-
+   font-size: 16px;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -311,9 +311,9 @@
 
     margin: 10px;
     transition: all 0.3s ease;
-    border: 5px white solid;
+    border: 2px white solid;
     border-radius: 3px;
-    
+
  }
 
 
@@ -341,11 +341,11 @@
  }
 
 
- 
+
 
  .imagenes_de_lujo {
-   display: flex;
-}
+    display: flex;
+ }
 
 
 
@@ -365,6 +365,7 @@
  .primera-tarjeta {
     width: 900px;
     object-fit: cover;
+    border: 2px white solid;
 
     background-image: url(./public/assets/22-fondo.avif);
     margin: 10px auto;
@@ -377,7 +378,7 @@
     width: 900px;
     object-fit: cover;
     align-items: center;
-
+    border: 2px white solid;
     background-image: url(./public/assets/22-fondo.avif);
     margin: 30px auto;
     border-radius: 15px;
@@ -389,7 +390,7 @@
     width: 900px;
     object-fit: cover;
     align-items: center;
-
+    border: 2px white solid;
     margin: 30px auto;
     border-radius: 15px;
     background-image: url(./public/assets/22-fondo.avif);
@@ -401,7 +402,7 @@
     width: 900px;
     object-fit: cover;
     align-items: center;
-
+    border: 2px white solid;
     margin: 30px auto;
     border-radius: 15px;
     background-image: url(./public/assets/22-fondo.avif);
@@ -415,7 +416,7 @@
     object-fit: cover;
     align-items: center;
     background-image: url(./public/assets/22-fondo.avif);
-
+    border: 2px white solid;
     margin: 30px auto;
     border-radius: 15px;
 
@@ -428,7 +429,7 @@
     object-fit: cover;
     align-items: center;
     background-image: url(./public/assets/22-fondo.avif);
-
+    border: 2px white solid;
     margin: 30px auto;
     border-radius: 15px;
 
@@ -442,7 +443,7 @@
     object-fit: cover;
     align-items: center;
     background-image: url(./public/assets/22-fondo.avif);
-
+    border: 2px white solid;
     margin: 30px auto;
     border-radius: 15px;
 
@@ -454,17 +455,14 @@
 
 
  .container {
-
-    border-radius: 10px;
-    background-color: rgb(144, 137, 137);
-
+    background-image: url(./public/assets/22-fondo.avif);
     transition: all 0.3s ease;
  }
 
  .container:hover {
     background-color: rgba(147, 177, 193, 0.559);
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 20px rgba(195, 162, 162, 0.3);
  }
 
 
