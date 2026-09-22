@@ -1,12 +1,12 @@
 // CONSUMIENDO UNA API con .then y catch
 
-fetch("http://localhost:3000/")
+fetch("http://localhost:3000/bandeja")
 
-    .then(datos => datos.text()
-        .then(res => {
-            console.log(res);
-        })
-    )
+.then(res => res.json())
+.then(items => {
+    console.log(items.id);
+})
+
 
     .catch(err => console.log('Error al consumir la API❌'));
 // .then(respuesta => {

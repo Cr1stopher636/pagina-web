@@ -24,8 +24,7 @@ const server = http.createServer((req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json; charset=utf-8');
         const primerObjeto = { id: 1, nombre: 'ricardo' }
-
-        res.end(JSON.stringify(primerObjeto.id))
+        res.end(JSON.stringify(primerObjeto));
 
     } else if (req.url === '/contacto') {
         res.statusCode = 200;
@@ -40,7 +39,7 @@ const server = http.createServer((req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json; charset=utf-8');
         const segundoObjeto = { id: 2, nombre: 'andrea' }
-        res.end(JSON.stringify(segundoObjeto.nombre));
+        res.end(JSON.stringify(segundoObjeto));
 
 
     } else if (req.url === '/configurador') {
