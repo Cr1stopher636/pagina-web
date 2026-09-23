@@ -1,6 +1,6 @@
 // CONSUMIENDO UNA API con .then y catch
 
-fetch("http://localhost:3000/bandeja")
+fetch("http://localhost:3000/")
 
 .then(res => res.json())
 .then(items => {
