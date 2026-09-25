@@ -1,14 +1,17 @@
 // CONSUMIENDO UNA API con .then y catch
 
-fetch("http://localhost:3000/modelos")
-
-.then(res => res.json())
+fetch("http://localhost:3000")
+.then(res => res.text())
 .then(items => {
-    console.log(items);
+    console.log(items)
+})
+
+.catch(err => {
+    console.error('Error al consumir la API');
 })
 
 
-    .catch(err => console.log('Error al consumir la API❌'));
+
 // .then(respuesta => {
 //     if (!respuesta.ok) throw new Error("Error en la respuesta del servidor");
 //     return respuesta.json();
