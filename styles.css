@@ -1,5 +1,5 @@
  * {
-   font-size: 16px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -168,7 +168,6 @@
 
 
 
-
  button {
     width: 100px;
     height: 35px;
@@ -213,6 +212,7 @@
     justify-content: center;
 
  }
+
 
 
  /* ESPECIFICACIONES */
@@ -270,7 +270,7 @@
  .contenedor-formulario {
     display: flex;
     justify-content: center;
- 
+
 
  }
 
@@ -362,15 +362,9 @@
 
 
  .primera-tarjeta {
-    width: 900px;
-    object-fit: cover;
-    border: 2px white solid;
+   width: 300px;
 
-    background-image: url(./public/assets/22-fondo.avif);
-    margin: 10px auto;
-    border-radius: 15px;
-    padding: 30px;
-    box-sizing: border-box;
+
  }
 
  .segunda-tarjeta {
@@ -454,7 +448,7 @@
 
 
  .container {
-    background-image: url(./public/assets/22-fondo.avif);
+    background-image: url(./public/assets/);
     transition: all 0.3s ease;
  }
 
@@ -472,11 +466,11 @@
 
 
 
-#comentarios {
-   width: 266px;
-   display: flex;
-   
-}
+ #comentarios {
+    width: 266px;
+    display: flex;
+
+ }
 
  #escalade {
     width: 400px;
