@@ -160,7 +160,7 @@
     width: 100%;
     background-size: cover;
 
-    background-image: url(./public/assets/00-fondo.avif);
+    background-image: url(./public/assets/00fondo-login.jpg);
     background-repeat: no-repeat;
     min-width: max-content;
     display: block;
@@ -173,7 +173,7 @@
  }
 
  #form-login {
-   background-color: rgb(102, 126, 102);
+   background-color: transparent;
 }
 
 #login-button {
