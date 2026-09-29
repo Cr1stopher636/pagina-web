@@ -160,7 +160,9 @@
     width: 100%;
     background-size: cover;
 
-    background-image: url(./public/assets/00fondo-login.jpg);
+    background-image: url(./public/assets/00fondo.login.jpg);
+    background-position: center;
+    min-height: 100vh;
     background-repeat: no-repeat;
     min-width: max-content;
     display: block;
