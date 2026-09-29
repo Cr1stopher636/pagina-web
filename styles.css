@@ -157,10 +157,12 @@
  }
 
  body {
-    width: 100%;
+   width: 100%;
     background-size: cover;
 
-    background-image: url(./public/assets/00-fondo.avif);
+    background-image: url(./public/assets/00fondo.jpg);
+    background-position: center;
+    min-height: 100vh;
     background-repeat: no-repeat;
     min-width: max-content;
     display: block;
@@ -471,7 +473,7 @@
 
 
 
- 
+
 
 
 #form-login {
