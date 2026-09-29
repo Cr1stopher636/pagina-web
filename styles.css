@@ -275,10 +275,9 @@
 
 
  .contenedor-formulario {
+   padding: 100px;
     display: flex;
     justify-content: center;
-
-
  }
 
 
@@ -468,6 +467,16 @@
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
  }
 
+
+
+
+
+ 
+
+
+#form-login {
+   background-color: rgb(102, 126, 102);
+}
 
 
 
