@@ -10,19 +10,21 @@
 
 </head>
 <body>
-    <div>
-        <header>
-            <h2>Login</h2>
-            <form id="formulario">
-                <label for="nombre">User</label>
-                <input value="Ben" id="usuario" name="salida1" placeholder="Nombre de usuario" required>
-                
-                <label for="nombre">Password</label>
-                <input  id="Password" name="salida1" placeholder="Password" required>
-                
-            </form>
-        </header>
-    </div>
+   <section class="contenedor-formulario">
+            <form action="/01-index.html" method="get">
+
+
+                <label for="nombre">Nombre de usuario</label>
+                <input value="Ben" id="nombre" name="salida1" placeholder="Usuario" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="salida4" placeholder="Contraseña" required>
+
+
+                <button type="submit" id="login-button">Login</button>
+
+        </section>
+        </form>
     
 </body>
 </html>
