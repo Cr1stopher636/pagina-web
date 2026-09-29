@@ -471,7 +471,12 @@
 
 
 
-
+#login-button {
+   font-family: monospace;
+   width: 100px;
+   background-color: rgb(61, 126, 173);
+   margin: 10px auto;
+}
 
 
 
