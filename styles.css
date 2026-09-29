@@ -67,18 +67,10 @@
 
 
  a {
-    border-radius: 10px;
-    background-color: rgb(204, 0, 0);
+    background-color: grey;
     color: white;
     text-decoration: none;
     padding: 10px;
-    transition: all 0.3s ease;
- }
-
- a:hover {
-    background-color: rgba(22, 87, 157, 0.559);
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
  }
 
 
@@ -517,7 +509,7 @@
 
  }
 
- #porsche911 {
+  #porsche911 {
     width: 400px;
     height: auto;
     object-fit: cover;
