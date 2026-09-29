@@ -362,17 +362,29 @@
 
 
  .primera-tarjeta {
-   width: 300px;
-
-
+    width: 300px;
  }
+
+ .container {
+    background-image: url(./public/assets/00fondoladrillo.avif);
+    transition: all 0.3s ease;
+    border: 2px rgb(160, 0, 0) solid;
+ }
+
+ .container:hover {
+   border-color: currentColor;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(195, 162, 162, 0.3);
+ }
+
+
+
 
  .segunda-tarjeta {
     width: 900px;
     object-fit: cover;
     align-items: center;
     border: 2px white solid;
-    background-image: url(./public/assets/22-fondo.avif);
     margin: 30px auto;
     border-radius: 15px;
     padding: 30px;
@@ -386,7 +398,6 @@
     border: 2px white solid;
     margin: 30px auto;
     border-radius: 15px;
-    background-image: url(./public/assets/22-fondo.avif);
     padding: 30px;
     box-sizing: border-box;
  }
@@ -398,8 +409,6 @@
     border: 2px white solid;
     margin: 30px auto;
     border-radius: 15px;
-    background-image: url(./public/assets/22-fondo.avif);
-
     padding: 30px;
     box-sizing: border-box;
  }
@@ -408,10 +417,9 @@
     width: 900px;
     object-fit: cover;
     align-items: center;
-    background-image: url(./public/assets/22-fondo.avif);
     border: 2px white solid;
     margin: 30px auto;
-    border-radius: 15px;
+    border-radius: 15px;s
 
     padding: 30px;
     box-sizing: border-box;
@@ -421,7 +429,6 @@
     width: 900px;
     object-fit: cover;
     align-items: center;
-    background-image: url(./public/assets/22-fondo.avif);
     border: 2px white solid;
     margin: 30px auto;
     border-radius: 15px;
@@ -435,7 +442,6 @@
     width: 900px;
     object-fit: cover;
     align-items: center;
-    background-image: url(./public/assets/22-fondo.avif);
     border: 2px white solid;
     margin: 30px auto;
     border-radius: 15px;
@@ -447,16 +453,7 @@
 
 
 
- .container {
-    background-image: url(./public/assets/00fondoladrillo.avif);
-    transition: all 0.3s ease;
- }
 
- .container:hover {
-    background-color: rgba(147, 177, 193, 0.559);
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(195, 162, 162, 0.3);
- }
 
 
 
