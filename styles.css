@@ -277,6 +277,7 @@
 
 
  .contenedor-formulario {
+      background-color: red;
    padding: 100px;
     display: flex;
     justify-content: center;
@@ -472,23 +473,12 @@
 
 
 
-
-
-
-
-#form-login {
-   background-color: rgb(102, 126, 102);
-}
-
-
-
 #login-button {
    font-family: monospace;
    width: 100px;
    background-color: rgb(61, 126, 173);
    margin: 10px auto;
 }
-
 
 
 
