@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" href="./public/assets/logo.ico">
     <link rel="stylesheet" href="styles-login.css">
     <title>Login</title>
 
 </head>
+
 <body>
-            <form action="/01-index.html" method="get" id="form-login">
+    <form action="/01-index.html" method="get" id="form-login">
+        <h2> Inicio de sesión</h2>
 
-
-                <label for="nombre">Nombre de usuario</label>
-                <input value="Ben" id="nombre" name="salida1" placeholder="Usuario" required>
+        <!-- USUARIO -->
+        <div class="user-container">
+            <label for="nombre"><strong>Usuario</strong></label>
+            <input value="" id="nombre" name="salida1" placeholder="Usuario" class="container-login" required>
 
             <!-- icono del perfil de usuario -->
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -45,12 +48,14 @@
 
 
         <!--Botón para ingresar -->
-                <button type="submit" id="login-button">Login</button>
+        <button type="submit" id="login-button">Login</button>
+        <div class="remeber-password"><a href="#">¿Olvidaste tu contraseña?</a></div>
+
 
         <div class="new-account">
             <p class="register-link">¿Todavía no tienes una cuenta?</p><a href="#">Regístrate</a>
         </div>
-        </form>
-    
+    </form>
 </body>
+
 </html>
