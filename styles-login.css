@@ -224,11 +224,14 @@
 
 
  #login-button {
-     border-radius: 5px;
+
+     border-radius: 15px;
+     border: 1px white inherit;
      color: white;
      font-family: monospace;
-     width: 100px;
-     background-color: rgb(73, 120, 153);
+     width: 150px;
+     height: 50px;
+     background-color: rgb(29, 72, 103);
      transition: all 0.3s ease;
  }
 
