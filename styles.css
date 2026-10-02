@@ -447,6 +447,16 @@
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
  }
 
+ .barra-navegador {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px auto;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: rgb(35, 54, 94);
+      transition: all 0.3s ease;
+ }
 
 
 #body-contact {
@@ -460,7 +470,7 @@
     display: block;
  }
 
- 
+
 
  #body-contact .contact-container {
    flex-direction: column;
