@@ -12,6 +12,7 @@ fetch("http://localhost:3000/modelos")
 
 
 
+
 // .then(respuesta => {
 //     if (!respuesta.ok) throw new Error("Error en la respuesta del servidor");
 //     return respuesta.json();
