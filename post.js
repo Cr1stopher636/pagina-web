@@ -9,7 +9,7 @@ loginForm.addEventListener('submit', async (event) => {
   const password = loginForm.password.value;
 
   try {
-    const response = await fetch('', {
+    const response = await fetch('/localhost:5500', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <form action="/01-index.html" method="POST" id="form-login">
+    <form action="/01-index.html" method="get" id="form-login">
         <h2> Inicio de sesión</h2>
 
         <!-- USUARIO -->
         <div class="user-container">
             <label for="nombre"><strong>Usuario:</strong></label>
-            <input type="text" id="nombre" name="username" placeholder="Usuario" class="container-login" required>
+            <input type="text" id="nombre" name="username" placeholder="Usuario" required>
 
             <!-- icono del perfil de usuario -->
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -33,7 +33,7 @@
         <!-- Contraseña -->
         <div class="password-container">
             <label for="password"><strong>Contraseña</strong></label>
-            <input type="password" id="password" name="password" placeholder="Contraseña" required class="container-login">
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
               
 
 
@@ -49,7 +49,7 @@
 
         <!--Botón para ingresar -->
         <button type="submit" id="login-button">Login</button>
-        <div class="remeber-password"><a href="#">¿Olvidaste tu contraseña?</a></div>
+        <div class="remember-password"><a href="#">¿Olvidaste tu contraseña?</a></div>
 
 
         <div class="new-account">
