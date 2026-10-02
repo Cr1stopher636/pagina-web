@@ -101,7 +101,6 @@
 
  .container-login {
      color: white;
-     margin: 30px auto;
      background-color: rgb(28, 32, 37);
      border-radius: 5px;
  }
@@ -112,7 +111,7 @@
  .user-container {
      background-color: rgb(168, 160, 150);
      margin: 15px;
-     padding: 5px;
+     padding: 25px;
      border-radius: 10px;
      transition: all 0.3s ease;
  }
@@ -126,17 +125,23 @@
 
 
  .password-container {
-    background-color: rgb(168, 160, 150);
+     background-color: rgb(168, 160, 150);
      margin: 15px;
-     padding: 5px;
+     padding: 25px;
      border-radius: 10px;
      transition: all 0.3s ease;
  }
 
  .password-container:hover {
-      background-color: rgb(93, 62, 62);
+     background-color: rgb(93, 62, 62);
      transform: translateY(-8px);
      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+ }
+
+ .remember-password {
+     text-align: center;
+     margin: 15px;
+     color: rgb(204, 0, 0);
  }
 
  /* ol {
@@ -216,8 +221,8 @@
  }
 
  #form-login h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 28px;
  }
 
 
