@@ -359,9 +359,9 @@
 
 
  .container:hover {
-    border-color: currentColor;
+    background-color: rgba(0, 0, 0, 0.559);
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(195, 162, 162, 0.3);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
  }
 
 
@@ -448,18 +448,18 @@
  }
 
  .barra-navegador {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 10px auto;
-      padding: 5px;
-      border-radius: 5px;
-      background-color: rgb(35, 54, 94);
-      transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(35, 54, 94);
+    transition: all 0.3s ease;
  }
 
 
-#body-contact {
+ #body-contact {
     width: 100%;
     background-size: cover;
     background-image: url(./public/assets/00fondo-bandeja.jpg);
@@ -473,15 +473,15 @@
 
 
  #body-contact .contact-container {
-   flex-direction: column;
-   width: 100px;
-   margin: 50px auto;
-   border-radius: 10px;
-   text-align: center;
-   min-width: 50vh;
-   background-color: rgba(0, 0, 0, 0.399);
-   border: 2px rgb(0, 0, 0) inset;
-   color: black;
+    flex-direction: column;
+    width: 100px;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 50vh;
+    background-color: rgba(0, 0, 0, 0.399);
+    border: 2px rgb(0, 0, 0) inset;
+    color: black;
  }
 
 
@@ -491,15 +491,15 @@
 
  #button-send {
 
-      width: 100px;
-      height: 35px;
-      margin: 10px;
-   
-      background-color: #4caf9ed1;
-      color: white;
-      border-radius: 10px;
-   
-      box-sizing: border-box;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+
+    background-color: #4caf9ed1;
+    color: white;
+    border-radius: 10px;
+
+    box-sizing: border-box;
  }
 
  #comentarios {
@@ -541,7 +541,7 @@
 
  }
 
-  #porsche911 {
+ #porsche911 {
     width: 400px;
     height: auto;
     object-fit: cover;
