@@ -368,7 +368,15 @@
 
 
 
-
+ .primera-tarjeta {
+    width: 900px;
+    object-fit: cover;
+    align-items: center;
+    margin: 30px auto;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+ }
 
 
  .segunda-tarjeta {
@@ -457,6 +465,8 @@
     background-color: rgb(35, 54, 94);
     transition: all 0.3s ease;
  }
+
+
 
 
  #body-contact {
