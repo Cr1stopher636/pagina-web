@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
         const segundoObjeto = { nombre: 'Andrea', edad: 23, ciudad: 'CDMX' }
         res.end(JSON.stringify(segundoObjeto));
     }
-})
+});
 
 server.listen(port, () => {
     console.log(`Servidor escuchando en el puerto: ${port}`);
