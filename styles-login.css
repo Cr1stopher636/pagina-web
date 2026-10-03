@@ -243,12 +243,11 @@
 
 
  #login-button {
-
      border-radius: 15px;
      border: 1px white inherit;
      color: white;
      font-family: monospace;
-     width: 150px;
+     width: 100px;
      height: 50px;
      background-color: rgb(29, 72, 103);
      transition: all 0.3s ease;
