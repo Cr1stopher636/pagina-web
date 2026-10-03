@@ -4,7 +4,7 @@ const desirePort = 3000;
 const server = http.createServer((req, res) => {
     // 1. Configurar cabeceras CORS en todas las respuestas
     // res.setHeader('Access-Control-Allow-Origin', '*'); // Permite solicitudes desde cualquier origen
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000/'); // Permite solicitudes desde ese origen específico
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000'); // Permite solicitudes desde ese origen específico
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS'); //Indica que métodos HTTP están permitidos
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Indica que cabeceras puede enviar el frontend en la petición
 
@@ -41,7 +41,7 @@ const server = http.createServer((req, res) => {
         res.setHeader('Content-Type', 'application/json; charset=utf-8')
         const tray = { message: 'En este apartado van las quejas o sugerencias del usuario' }
         res.end(JSON.stringify(tray));
-        
+
 
     } else if (req.url === '/configurador') {
         console.log('Está es la página del configurador');
