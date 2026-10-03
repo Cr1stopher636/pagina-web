@@ -1,6 +1,6 @@
 // CONSUMIENDO UNA API con .then y catch
 
-fetch("http://localhost:3000/modelos")
+fetch("http://localhost:3000/login")
 .then(res => res.json())
 .then(items => {
     console.log(items)
